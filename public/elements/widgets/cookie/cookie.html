@@ -1,0 +1,31 @@
+<html lang="ru">
+<meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" type="text/css" href="./reset.css">
+<link rel="stylesheet" type="text/css" href="./style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+<div id="back" class="back">
+    <div class="notify">
+        <img src="./close.png" id="close" alt="" class="close">
+        <h1 class="n_title">Наш сайт использует cookie.
+            Продолжая им пользоваться, вы соглашаетесь на обработку персональных данных в соответствии с <span class="pllitics"> политикой конфиденциальности.</span></h1>
+        <button type="submit" id="submit" class="redy">Согласен</button>
+    </div>
+</div>
+
+<script>
+    document.getElementById('close').addEventListener('click', function (){
+       document.getElementById('back').style.display = 'none';
+    });
+    document.getElementById('submit').addEventListener('click', function() {
+        // Отправляем сообщение родительскому окну
+        window.parent.postMessage('agreed', '*');
+    });
+</script>

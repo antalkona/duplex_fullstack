@@ -1,0 +1,71 @@
+
+
+/* НАСТРОЙКИ */
+.element::-webkit-scrollbar {
+    width: 0;
+}
+::-webkit-scrollbar {
+    width: 0;
+}
+/* ---------------------------------------------------------------- */
+
+/* ТЕСТЫ */
+.test{
+    font-size: 40px;
+    font-family: 'Open Sans';
+    display: none;
+}
+
+.main_head{
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.h_logo{
+    position: relative;
+
+}
+.h_pages{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none; /* no underline */
+
+}
+.h_main{
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.h_main:hover{
+
+    color: #0094FF;
+
+}
+.h_iconnaw{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none; /* no underline */
+}
+
+.h_inaw{
+    cursor: pointer;
+    color: black;
+}

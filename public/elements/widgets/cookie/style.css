@@ -1,0 +1,140 @@
+
+
+/* НАСТРОЙКИ */
+.element::-webkit-scrollbar {
+    width: 0;
+}
+::-webkit-scrollbar {
+    width: 0;
+}
+/* ---------------------------------------------------------------- */
+
+/* ТЕСТЫ */
+.notify{
+    position: fixed;
+    width: 30%;
+
+    height: 200px;
+    bottom: 2%;
+    right: 2%;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.38);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.14) -3.44%, rgba(255, 255, 255, 0.65) 102.76%);
+    box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(27.5px);
+
+}
+.close{
+
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    right: 4%;
+    top: 5%;
+
+
+}
+.close:hover{
+
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+.n_title{
+    position: absolute;
+    width: 90%;
+    left: 4%;
+    top: 5%;
+    height: 85%;
+    color: #000;
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.pllitics{
+    color: #0094FF;
+
+}
+.pllitics:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.redy{
+    position: absolute;
+    width: 40%;
+    height: 20%;
+    bottom: 7%;
+    left: 4%;
+    border-radius: 3px;
+    background: #0094FF;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transition: background-color 0.3s, transform 0.5s;
+}
+.redy:hover{
+    scale: 101%;
+    background: #000000;
+    color: #0094FF;
+    transition: background-color 3s, transform 1s;
+}
+
+@media screen and (max-width: 1060px) {
+    .n_title{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 810px){
+    .n_title{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .back{
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(4px);
+    }
+    .notify{
+        width: 70%;
+        height: 30%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background: white;box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.54);
+        border-color: black;
+    }
+    .close{
+        width: 44px;
+        height: 44px;
+    }
+    .n_title{
+        font-size: 25px;
+    }
+    .redy{
+        width: 90%;
+        left: 5%;
+    }
+}
+@media screen and (max-width: 768px){
+    .n_title{
+        font-size: 23px;
+    }
+}
+@media screen and (max-width: 480px){
+    .n_title{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 370px){
+    .n_title{
+        font-size: 17px;
+    }
+}
