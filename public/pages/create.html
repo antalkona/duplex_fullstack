@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Остальные теги head -->
+    <script src="https://cdn.tiny.cloud/1/dcrjk5kydr1vc3qnpxcvawn20glkx6h27tn3acw6b4fr3o34/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+        tinymce.init({
+            selector: '#newContent',
+            height: 500,
+            plugins: ['advlist autolink lists link image charmap print preview anchor', 'searchreplace visualblocks code fullscreen', 'insertdatetime media table paste code help wordcount'],
+            toolbar: 'undo redo | formatselect | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | help'
+        });
+
+        function createPage() {
+            const content = tinymce.get('newContent').getContent();
+            fetch('/pages', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ content })
+            })
+                .then(response => response.text())
+                .then(data => alert(data))
+                .catch(error => console.error('Ошибка:', error));
+        }
+    </script>
+</head>
+<body>
+<!-- create.html -->
+<textarea id="newContent"></textarea>
+<button onclick="createPage()">Создать страницу</button>
+</body>
+</html>

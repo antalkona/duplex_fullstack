@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Остальные теги head -->
+</head>
+<body>
+<!-- index.html -->
+<div id="content"></div>
+<script>
+    fetch('/pages/1')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('content').innerHTML = data; // Отображаем содержимое страницы без редактора
+        })
+        .catch(error => console.error('Ошибка:', error));
+</script>
+</body>
+</html>
