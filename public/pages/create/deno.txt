@@ -1,0 +1,49 @@
+<h1 style="text-align: center;">ЗАГОЛОВКИ:</h1>
+<h1>ЗАГОЛОВОК H1</h1>
+<h2>ЗАГОЛОВОК H2</h2>
+<h3>ЗАГОЛОВОК H3</h3>
+<h4>ЗАГОЛОВОК H4</h4>
+<h5>ЗАГОЛОВОК H5</h5>
+<h6>ЗАГОЛОВОК H6</h6>
+<h1 style="text-align: center;">АБЗАЦ:</h1>
+<p><strong>Жирный, </strong><em>Курсив,&nbsp;</em><span style="text-decoration: underline;">Подчеркнутый, </span><span style="text-decoration: line-through;">Зачеркнутый,&nbsp;</span><sup>Надстрочный</sup>, <sub>Подсрочный</sub></p>
+<p><sub>КОД - <code>print("Hello World")</code></sub></p>
+<p style="text-align: left;">&nbsp;</p>
+<p style="text-align: left;">Лево</p>
+<p style="text-align: right;">Право</p>
+<p style="text-align: center;">Центр</p>
+<ul>
+<li style="text-align: left;">Список 1</li>
+<li style="text-align: left;">Список 2</li>
+<li style="text-align: left;">Список 3</li>
+</ul>
+<ol>
+<li>Номер один</li>
+<li>Номер два</li>
+<li>Номер три</li>
+</ol>
+<p>😀😁 - Эмодзи</p>
+<p><span style="background-color: #e03e2d;">МАРКЕР&nbsp; </span><span style="color: #e03e2d;">ЦВЕТ ТЕКСТА</span></p>
+<h1 style="text-align: center;"><span style="color: #000000;">ТАБЛИЦЫ:</span></h1>
+<table style="border-collapse: collapse; width: 100%; height: 44px;" border="1">
+<tbody>
+<tr style="height: 22px; background-color: #2dc26b;">
+<td style="width: 19.98414%; height: 22px;">Ячейка</td>
+<td style="width: 39.968279%; height: 22px;" colspan="2">Обедененная ячейка</td>
+<td style="width: 19.98414%; height: 22px;">Ячейка</td>
+<td style="width: 19.98414%; height: 22px;">Ячейка</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 19.98414%; height: 22px;">Ячейка</td>
+<td style="width: 19.98414%; height: 22px;">Ячейка</td>
+<td style="width: 19.98414%; height: 22px;">Ячейка</td>
+<td style="width: 19.98414%; height: 22px;">Ячейка</td>
+<td style="width: 19.98414%; height: 22px;">Ячейка</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<h1 style="text-align: center;">ПРОЧЕЕ:</h1>
+<p><a title="Ссылка на сайт" href="https://zentas.ru" target="_blank" rel="noopener">Ссылка на сайт</a></p>
+<p><img src="https://w.forfun.com/fetch/91/9169909f3e45e394aafe6ea01c974ccd.jpeg" alt="" width="200" height="113" /></p>
+<p><iframe src="https://www.youtube.com/embed/Z54FdjHqPgM" width="560" height="314" allowfullscreen="allowfullscreen"></iframe></p>
