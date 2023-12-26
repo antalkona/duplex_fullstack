@@ -1,0 +1,29 @@
+{
+  "LOCAL-SERVER": {
+    "SERVER-ID": "1230123",
+    "SERVER-NAME": "Дуплекс",
+    "SERVER-BUILDS": "1",
+    "SERVER-VERSION": "1.0",
+    "SERVER-HOSTING": "Ispmgr",
+    "SERVER-PORT": "",
+    "SERVER-DOMAIN": ""
+  },
+  "GLOBAL-SERVER": {
+    "SERVER-ID": "1",
+    "SERVER-NAME": "ZentasRU #1",
+    "SERVER-BUILDS": "1",
+    "SERVER-VERSION": "1",
+    "SERVER-DOMAIN": "",
+    "SERVER-AUTO": {
+      "HOST": "",
+      "DOMAIN":""
+    }
+  },
+  "TELEGRAM": {
+    "TELEGRAM-TOKEN": "6485069394:AAEH8bkEA0pkFx4uu53A4KZOLJCf0bx02CA",
+    "TG_LOGIN-CODE": "1234",
+    "TG_WHITE-LIST": [
+
+    ]
+  }
+}
