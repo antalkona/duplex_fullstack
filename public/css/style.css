@@ -5,7 +5,6 @@
 
 
 
-
 /* НАСТРОЙКИ */
 .element::-webkit-scrollbar {
     width: 0;
@@ -22,7 +21,7 @@ header iframe {
 }
 .main {
     position: relative;
-
+    top: 60px;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;

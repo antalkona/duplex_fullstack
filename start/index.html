@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Установка</title>
+</head>
+<body>
+   <main>
+       <div class="main">
+           <div class="m_head">
+               <img src="./Group%20270.png" class="logo" alt="">
+               <h1 class="s_title">Мастер установки сайта</h1>
+               <div class="line"></div>
+           </div>
+           <div id="step1d" class="step">
+               <img src="./perspaleta1_0043.png" alt="" class="stepi">
+               <h1 class="stepmt">Добро пожаловать в мастер установки</h1>
+               <button id="btn1" type="button" class="btn btn-primary">Далее</button>
+
+           </div>
+           <div id="step2d" class="step">
+               <h1 class="stepmt">Админ аккаунт</h1>
+               <div class="input-group mb-3 input">
+                   <span class="input-group-text" id="inputGroup-sizing-default">Логин</span>
+                   <input id="a_login" placeholder="Введите логин по которому будете входить (англ)" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+               </div>
+               <div class="input-group mb-3 input">
+                   <span class="input-group-text" id="inputGroup-sizing-default">Имя  </span>
+                   <input id="a_name" placeholder="Введите свое имя" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+               </div>
+               <div class="input-group mb-3 input">
+                   <span class="input-group-text" id="inputGroup-sizing-default">Пароль</span>
+                   <input id="a_pass" placeholder="Придумайте пароль (мин 8 симвл)" type="password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+               </div>
+               <button onclick="step3()" id="btn2" type="button" class="btn btn-primary">Далее</button>
+
+           </div>
+
+           <div id="step3d" class="step">
+               <h1 class="stepmt">Настройки сервера</h1>
+               <div class="input-group mb-3 input">
+                   <span class="input-group-text" id="inputGroup-sizing-default">Название сервера</span>
+                   <input id="server_name" placeholder="Придумайте имя сервера" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+               </div>
+               <div class="input-group mb-3 input">
+                   <span class="input-group-text" id="inputGroup-sizing-default">Домен сервера</span>
+                   <input id="server_domen" placeholder="Введите домен сайта (Home Page)" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+               </div>
+               <div class="input-group mb-3 input">
+                   <span class="input-group-text" id="inputGroup-sizing-default">Порт сервера</span>
+                   <input id="server_port" placeholder="Введите порт (Диапозон: 3000-4000)" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+               </div>
+               <button onclick="step4()" id="btn3" type="button" class="btn btn-primary">Далее</button>
+
+           </div>
+           <div id="step4d" class="step">
+               <h1 class="stepmt">Лицензия</h1>
+               <select id="panel" class="form-select" aria-label="Default select example">
+                   <option selected>Выбирите панель управления хостинга</option>
+                   <option value="1">FastPanel</option>
+                   <option value="2">ISP Manager</option>
+                   <option value="3">Vesta CP</option>
+               </select>
+               <div class="input-group mb-3 input">
+                   <span class="input-group-text" id="inputGroup-sizing-default">Ключ лицензии</span>
+                   <input id="lencenze" placeholder="Вставьте лецинзеонный ключ" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+               </div>
+               <div class="input-group mb-3 input">
+                   <span class="input-group-text" id="inputGroup-sizing-default">Контактная почта</span>
+                   <input id="email" placeholder="example@example.com" type="email" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+               </div>
+               <button onclick="step5()" id="btn4" type="button" class="btn btn-primary">Далее</button>
+
+           </div>
+           <div id="step5d" class="step">
+               <div class="spinner-border text-info" style="width: 5rem; height: 5rem;" role="status">
+                   <span class="visually-hidden">Loading...</span>
+               </div>
+               <br>
+               <br>
+               <br>
+               <h1 class="stepmt">Установка займет не более 5 минут, ждите...</h1>
+               <!--               <button id="btn4" type="button" class="btn btn-primary">Далее</button>-->
+
+           </div>
+           <div id="step6d" class="step">
+               <img src="./tick-dynamic-color.png" alt="" class="stepi">
+               <h1 class="stepmt">Все готово!</h1>
+               <button id="btn1" type="button" class="btn btn-primary">Админ Панель</button>
+
+           </div>
+       </div>
+   </main>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+   <script src="./script.js"></script>
+</body>
+</html>

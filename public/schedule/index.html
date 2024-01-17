@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+    <link rel="stylesheet" href="../elements/header/css/style.css">
+
+    <title>Document</title>
+</head>
+<body>
+<header>
+    <div class="main_head">
+        <script src="https://lidrekon.ru/slep/js/jquery.js"></script>
+        <script src="https://lidrekon.ru/slep/js/uhpv-full.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+
+        <img src="../elements/header/img/Group%20233.png" alt="" class="h_logo">
+        <div class="h_pages">
+            <button class="h_main" onclick="open_header('')">Главная</button>
+            <button class="h_main" onclick="open_header('school')">Школа</button>
+            <button class="h_main" onclick="open_header('news')">Новости</button>
+            <button class="h_main" onclick="open_header('schedule')" >Расписание</button>
+        </div>
+        <div class="h_iconnaw">
+            <img data-bs-toggle="tooltip" data-bs-title="подсказок по умолчанию" title="Контакты" src="../elements/header/img/mail%201.png" alt="" class="h_inaw">
+            <img id="specialButton" style="cursor:pointer;" title="Версия для слабовидящих" src="../elements/header/img/view%201.png" alt="" class="h_inaw">
+            <img title="Поиск по сайту" src="../elements/header/img/search%201.png" alt="" class="h_inaw">
+            <img title="Меню" src="../elements/header/img/menu%201.png" alt="" class="h_inaw">
+            <script>
+                const herd = location.origin
+                function open_header(text){
+                    location.replace(herd + "/" + text)
+                    console.log(herd + "/" + text)
+                }
+            </script>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="title">
+        <h1>Расписание</h1>
+    </div>
+    <div class="row1">
+        <div class="main-container" id="main-container">
+
+        </div>
+        <div class="time_container">
+            <div class="td">
+                <h1 class="title1">Время уроков</h1>
+
+            </div>
+            <br>
+            <div class="smena">
+                <h1 class="smene">1 Смена</h1>
+
+            </div>
+            <div class="times">
+                <h1 class="time">1 урок: 0:00 - 0:00</h1>
+                <h1 class="time">2 урок: 0:00 - 0:00</h1>
+                <h1 class="time">3 урок: 0:00 - 0:00</h1>
+                <h1 class="time">4 урок: 0:00 - 0:00</h1>
+                <h1 class="time">5 урок: 0:00 - 0:00</h1>
+            </div>
+            <br>
+            <div class="smena">
+                <h1 class="smene">2 Смена</h1>
+
+            </div>
+            <div class="times">
+                <h1 class="time">1 урок: 0:00 - 0:00</h1>
+                <h1 class="time">2 урок: 0:00 - 0:00</h1>
+                <h1 class="time">3 урок: 0:00 - 0:00</h1>
+                <h1 class="time">4 урок: 0:00 - 0:00</h1>
+                <h1 class="time">5 урок: 0:00 - 0:00</h1>
+            </div>
+            <br>
+            <div class="full"></div>
+        </div>
+
+
+    <!-- Dynamic content will be added here -->
+
+    </div>
+    <div class="agitation">
+
+    </div>
+</main>
+<footer>
+    <iframe id="foot" src="../elements/footer/news.html" width="100%" frameborder="0"></iframe>
+</footer>
+
+<script>
+    // Fetch data from the server
+    fetch('/schedule/data')
+        .then(response => response.json())
+        .then(data => {
+            // Sort data by id in descending order
+            console.log(data)
+            data.sort((a, b) => b.id - a.id);
+            console.log(data)
+
+            // Create div elements dynamically
+            const mainContainer = document.getElementById('main-container');
+
+            data.forEach(item => {
+                const div = document.createElement('div');
+                div.className = 'r_cont'; // Изменено здесь
+                div.innerHTML = `
+                <div class="ellement">
+                    <h1 class="date">${item.data}</h1>
+                        <button class="download" onclick="downloadFile('${item.name}')">Скачать</button>
+                </div>
+
+            `;
+                mainContainer.appendChild(div);
+            });
+        })
+        .catch(error => console.error('Error fetching data:', error));
+
+    // Function to generate download link
+    function downloadFile(fileName) {
+        const downloadLink = `${window.location.protocol}//${window.location.host}/schedule/files/${fileName}`;
+        window.open(downloadLink, '_blank');
+    }
+</script>
+</body>
+</html>

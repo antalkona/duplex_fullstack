@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500&display=swap');
+header{
+    position: fixed;
+    z-index: 1001;
+    width: 100%;
+    height: 60px;
+    background: #121726;
+    top: 0%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+.user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6px;
+}
+.user_name{
+    position: relative;
+    margin-top: 5px;
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto Condensed;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+}
+.pages{
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    left: 50%;
+
+    transform: translate(-50%);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.page{
+    color: white;
+    cursor: pointer;
+}
+.create{
+    width: 100%;
+    height: calc(100%);
+    padding-top: 70px;
+    padding-left: 50px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+}
+.title{
+    color: white;
+
+}
+
+.loadbox{
+    position: absolute;
+    width: 70%;
+    height: 50%;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    background: #121726;
+    border-radius: 20px;
+    border: 0.5px solid #ffffff; /* Толщина 2 пикселя, белый цвет */
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 30px;
+    flex-direction: column;
+
+
+}
+.l_title{
+    color: white;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+#fileInput{
+    top: 10px;
+    color: #FFFFFF;
+}
+#fileInput::-webkit-file-upload-button {
+    background: #0094FF;
+    border: none;
+    border-radius: 4px;
+    color: white;
+}
+#fata{
+    color: white;
+    font-size: 100%;
+}
+.upload{
+    border: none;
+    width: 100px;
+    height: 40px;
+    background: #0094FF;
+    color: white;
+    border-radius: 12px;
+}
+
+.main-container{
+    overflow-x: scroll;
+    overflow-y: unset;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.r_cont{
+    position: relative;
+    width: 100%;
+    height: 50px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.date{
+    color: white;
+    margin-left: 5%;
+}
+.buttons{
+    margin-right: 5%;
+
+}

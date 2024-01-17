@@ -1,7 +1,9 @@
 // ПОДКЛЮЧЕНИЕ МОДУЛЕЙ
 const express = require('express');
 const fs = require("fs");
-const { site_open, site_close, site_tex, site_notex } = require('./telegram_bot'); // Импорт функции message из telegram_bot.js
+const { site_open, site_close, site_tex, site_notex } = require('./telegram_bot');
+const path = require("path"); // Импорт функции message из telegram_bot.js
+const randomNumber = Math.floor(Math.random() * (901) + 100);
 
 // ИНИЦИАЛИЗАЦИЯ
 const postRequestApp = express();
@@ -96,6 +98,50 @@ postRequestApp.post('/admin', (req, res) => {
             "cite_dev": "true",
         });
         site_tex()
+    }
+});
+
+
+postRequestApp.get('/admin/dev/check/server-cfg', (req, res) => {
+    console.log('Json +')
+    res.send(`https://[доменное имя сайта]/admin/dev/server-cfg/code/${randomNumber}`);
+
+})
+postRequestApp.get('/admin/dev/check/admin-users', (req, res) => {
+    console.log('Json +')
+    res.send(`https://[доменное имя сайта]/admin/dev/admin-users/code/${randomNumber}`);
+
+})
+postRequestApp.get(`/admin/dev/check/server-cfg/code/${randomNumber}`, (req, res) => {
+    console.log('Json +');
+
+    const filePath = path.join(__dirname, 'config', 'server_cfg.json'); // Путь к файлу
+
+    try {
+        const data = fs.readFileSync(filePath, 'utf8');
+        res.statusCode = 200;
+        res.setHeader('Content-Type', 'application/json;charset=utf-8');
+        res.send(data);
+    } catch (error) {
+        console.error('Error reading file:', error);
+        res.statusCode = 500;
+        res.send('Error reading file');
+    }
+});
+postRequestApp.get(`/admin/dev/check/admin-users/code/${randomNumber}`, (req, res) => {
+    console.log('Json +');
+
+    const filePath = path.join(__dirname, 'config', 'admin_users.json'); // Путь к файлу
+
+    try {
+        const data = fs.readFileSync(filePath, 'utf8');
+        res.statusCode = 200;
+        res.setHeader('Content-Type', 'application/json;charset=utf-8');
+        res.send(data);
+    } catch (error) {
+        console.error('Error reading file:', error);
+        res.statusCode = 500;
+        res.send('Error reading file');
     }
 });
 // СОЗДАНИЕ МОДУЛЯ

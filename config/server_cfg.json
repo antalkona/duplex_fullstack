@@ -1,12 +1,17 @@
 {
-  "LOCAL-SERVER": {
+  "LOCALSERVER": {
     "SERVER-ID": "1230123",
-    "SERVER-NAME": "Дуплекс",
+    "SERVER-NAME": "",
     "SERVER-BUILDS": "1",
     "SERVER-VERSION": "1.0",
-    "SERVER-HOSTING": "Ispmgr",
+    "SERVER-HOSTING": "",
     "SERVER-PORT": "",
-    "SERVER-DOMAIN": ""
+    "SERVER-DOMAIN": "",
+    "YANDEX-METRIC": "",
+    "GOOGLE-ANALITICS": "",
+    "LES": "",
+    "SERVER_ACTIVE": "",
+    "EMAIL": ""
   },
   "GLOBAL-SERVER": {
     "SERVER-ID": "1",
@@ -16,14 +21,15 @@
     "SERVER-DOMAIN": "",
     "SERVER-AUTO": {
       "HOST": "",
-      "DOMAIN":""
+      "DOMAIN": ""
     }
   },
   "TELEGRAM": {
-    "TELEGRAM-TOKEN": "6485069394:AAEH8bkEA0pkFx4uu53A4KZOLJCf0bx02CA",
+    "TELEGRAM-TOKEN": "6485069394:AAE_17sk-oTRwFZychn1XInDMIuUbxq6orQ",
     "TG_LOGIN-CODE": "1234",
     "TG_WHITE-LIST": [
-
+      "1642661427",
+      "1642661427"
     ]
   }
 }

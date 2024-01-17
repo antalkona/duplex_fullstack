@@ -1,0 +1,84 @@
+main{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, #70c1ff, #498ffc);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    position: relative;
+    width: 70%;
+    height: 70%;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+
+}
+.m_head{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    height: 80%;
+}
+.s_title{
+    color: black;
+    font-size: 150%;
+}
+.line{
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: black;
+    bottom: 0;
+    margin-left: -10px;
+}
+.step{
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 50px);
+    top: 50px;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.stepi{
+    position: relative;
+    width: 200px;
+}
+.stepmt{
+    text-align: center;
+    width: 50%;
+}
+.btn{
+    margin-top: 35px;
+}
+.input, .form-select{
+    width: 50%;
+}
+#step2d, #step3d, #step4d{
+    z-index: -100;
+}
+#step5d,#step6d{
+    z-index: -100;
+}

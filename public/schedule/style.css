@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500&display=swap');
+
+.block{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 20px;
+
+
+}
+
+main{
+    position: relative;
+    width: 100vw;
+    height: calc(100vh - 165px);
+    top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+
+}
+.row1{
+    position: relative;
+    margin: 0 10%;
+    width: 80%;
+    height: 70%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-container{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: relative;
+    width: 64%;
+    height: 100%;
+    background: rgba(152, 219, 255, 0.83);
+
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+}
+.main-container::-webkit-scrollbar {
+    position: absolute;
+    top: 20px;
+    width: 10px; /* Ширина скроллбара */
+}
+
+/* Стили для трека (полосы, по которой двигается бегунок) */
+.main-container::-webkit-scrollbar-track {
+    background-color: transparent; /* Прозрачный фон трека */
+    border-radius: 5px; /* Закругление трека */
+}
+
+/* Стили для бегунка (ползунка) */
+.main-container::-webkit-scrollbar-thumb {
+    background-color: rgba(110, 197, 255, 0.52); /* Цвет бегунка (почти прозрачный черный) */
+    border-radius: 5px; /* Закругление бегунка */
+
+}
+
+/* Стили для уголков бегунка */
+.main-container::-webkit-scrollbar-corner {
+    background-color: transparent; /* Прозрачные уголки */
+
+}
+
+.ellement{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+}
+.time_container{
+    position: relative;
+    width: 34%;
+    height: 100%;
+    background: rgba(255, 152, 152, 0.83);
+
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+.td{
+    width: 90%;
+}
+.title1{
+    margin-top: 10px;
+    font-family: Roboto Condensed;
+    font-weight: 700;
+    font-size: 150%;
+    color: #ffffff;
+}
+footer{
+    position: relative;
+
+    top: 20px;
+
+}
+.title{
+    position: relative;
+    width: 80%;
+
+    padding-left: 8%;
+
+    font-family: Roboto Condensed;
+    font-weight: 700;
+    font-size: 200%;
+    color: #0094FF;
+    margin-left: 2%;
+}
+.r_cont{
+    width: 96%;
+    height: 50px;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    background: rgba(115, 182, 255, 0.3);
+    border-radius: 10px;
+
+
+    display: flex;
+    align-items: center;
+
+}
+.date{
+    margin-left: 10px;
+    font-family: Roboto Condensed;
+    font-weight: 700;
+    font-size: 125%;
+    color: #ffffff;
+}
+.download {
+    cursor: pointer;
+    margin-right: 10px;
+
+    position: relative;
+    width: 100px;
+    height: 40px;
+    background: #ffffff;
+    border: none;
+    border-radius: 12px;
+    color: #0094FF;
+    font-size: 100%;
+}
+
+.smena, .times{
+}
+
+.smene{
+    font-family: Roboto Condensed;
+    font-weight: 700;
+    font-size: 130%;
+    color: #ffffff;
+}
+.time{
+    font-family: Roboto Condensed;
+    font-weight: 700;
+    font-size: 120%;
+    color: #ffffff;
+}
+.times{
+}
+.agitation{
+    width:80%;
+    margin-top: 2%;
+    margin-left: 10%;
+    height: 20%;
+    background: #5d88b4;
+    border-radius: 12px;
+}

@@ -3,14 +3,17 @@ const fs = require('fs');
 const path = require('path');
 const express = require('express');
 const bodyParser = require('body-parser'); // Добавлено для парсинга тела запроса
+
 // ---------------------------------------------------------------
 
 // ПОДКЛЮЧЕНИЕ ФАЙЛОВ
 const postRequestApp = require('./adminRoutes'); // Путь к файлу postRequest.js
-const pageRequestApp = require('./create_pages'); // Путь к файлу postRequest.js
+const pageRequestAppPage = require('./create_pages'); // Путь к файлу postRequest.js
+const pageRequestAppPage2 = require('./create_calendar'); // Путь к файлу postRequest.js
+const startRequest = require('./getstart');
 
     // telegram bot  init
-const { startTelegramBot, server_start } = require('./telegram_bot');
+const { startTelegramBot, server_start, restartServer } = require('./telegram_bot');
 startTelegramBot();
 server_start();
 // ---------------------------------------------------------------
@@ -24,11 +27,14 @@ const app = express(); // EXPRESS - для сайта
 
 // ПОДКЛЮЧЕНИЕ ИСПОЛЬЗОВАНИЙ К ПРИЛОЖЕНИЮ
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'start')));
 app.use(express.json());
 app.use(bodyParser.json()); // Используем bodyParser для парсинга JSON данных
 
 app.use(postRequestApp);
-app.use(pageRequestApp)
+app.use(pageRequestAppPage);
+app.use(pageRequestAppPage2);
+app.use(startRequest)
 
 
 // ---------------------------------------------------------------
@@ -64,6 +70,11 @@ if ("SOCKET" in process.env) {
 } else if ("PORT" in process.env) {
     app.listen(PORT, () => {
         console.log(`Listening http:/:${PORT}/`);
+    });
+
+} else {
+    app.listen(3000, function(){
+        console.log('listening on *:3000');
     });
 }
 // SERVER SETTINGS | НЕ ИЗМЕНЯТЬ  ----------------------------------

@@ -100,4 +100,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }*/
 
 });
+function rasp(){
+    const currentDomain = window.location.protocol + "//" + window.location.host;
+    const href = currentDomain + "/schedule/";
 
+    location.replace(href)
+}

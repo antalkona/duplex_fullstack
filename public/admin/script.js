@@ -1,8 +1,10 @@
 function submitForm() {
     const user = document.getElementById('user').value;
     const password = document.getElementById('password').value;
+    const currentURL = window.location.href;
 
-    fetch('/admin', {
+
+    fetch(currentURL, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -28,7 +30,7 @@ function submitForm() {
 
                 // Отложенная переадресация на другую страницу через 5 секунд
                 setTimeout(() => {
-                    window.location.href = 'http://duplex.zentas.ru/admin/dashboard';
+                    window.location.href = `${currentURL}dashboard`;
                 }, 5000);
             } else {
                 console.log('Ошибка авторизации:', data.error);
@@ -37,4 +39,16 @@ function submitForm() {
         .catch(error => {
             console.error('Произошла ошибка:', error);
         });
+}
+document.addEventListener("DOMContentLoaded", function() {
+    // Проверяем, есть ли в адресной строке хэш-тег #authrestnt
+    if (window.location.hash === '#authrestnt') {
+        // Ваш код или вызов функции, который должен выполниться при срабатывании условия
+        yourFunction();
+    }
+});
+
+function yourFunction() {
+    // Здесь ваш код или функция, которая должна выполниться
+    document.getElementById('authResponse2').style.display = 'block'    // Дополнительные действия
 }
