@@ -8,10 +8,33 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./style.css">
-  <title>Document</title>
-</head>
+  <title>Education CMS</title>
+  <link rel="icon" id="icon" href="#">
+  <script>
+    // Функция для получения иконки и установки пути к ней
+    function setFavicon() {
+      // Получаем доменное имя текущего сайта
+      const domain = window.location.origin;
 
+      // Устанавливаем путь к иконке (замените 'path/to/your/favicon.ico' на реальный путь)
+      const iconPath = domain + "/assets/images/icon/4.jpg";
+
+      // Устанавливаем иконку
+      document.getElementById("icon").href = iconPath;
+    }
+
+    // Вызываем функцию при загрузке страницы
+    window.onload = setFavicon;
+  </script>
+</head>
+<div class="alert alert-success alertmsg" id="alertmsg" role="alert">
+
+</div>
+<div class="alert alert-danger alertmsg" id="alerterr" role="alert">
+
+</div>
 <body>
+
 <!-- Модальное окно -->
 <div class="modal" id="myModal">
   <div class="modal-dialog">
@@ -144,11 +167,11 @@
     <div class="m_cite main2">
       <h1 class="m2_title">Быстрые функции</h1>
       <div class="func_case">
-        <input type="checkbox" checked style="--s:25px">
-        <h1 class="func_title">Открыть / закрыть</h1>
+        <input id="closeOpen" onclick="onclickcheckboxopen('closeOpen', 'open')" type="checkbox" checked style="--s:25px">
+        <h1  class="func_title">Открыть / закрыть</h1>
       </div>
       <div class="func_case">
-        <input type="checkbox" checked style="--s:25px">
+        <input onclick="onclickcheckboxopen('tehOnOf', 'dev')" id="tehOnOf" type="checkbox" checked style="--s:25px">
         <h1 class="func_title">Тех.работы</h1>
       </div>
       <div class="func_case">
@@ -168,7 +191,7 @@
         <h1 class="m2_stat_txt">БД: <span>no data</span> </h1>
       </div>
       <br>
-      <button class="pagem">Детальная конфигурация</button>
+      <button style="cursor: pointer" class="pagem">Сохранить</button>
     </div>
   </div>
   <div id="main2" data-id="main" class="main">

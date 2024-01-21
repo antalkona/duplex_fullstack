@@ -15,20 +15,23 @@ postRequestApp.post('/admin', (req, res) => {
     const statusFilePath = './config/status.json';
     const statusFilePath2 = './config/admin_users.json'; // путь к базе
     if (req.body && req.body.login && req.body.password) {
-        const { login, password } = req.body;
+        const {login, password} = req.body;
         const statusData = JSON.parse(fs.readFileSync(statusFilePath2, 'utf8'));
 
         const user = statusData.find(user => user.lgoin === login && user.password === password);
 
         if (user) {
-            return res.status(200).json({ message: 'Успешная авторизация', user });
+            return res.status(200).json({message: 'Успешная авторизация', user});
         } else {
-            return res.status(401).json({ error: 'Неправильный логин или пароль' });
+            return res.status(401).json({error: 'Неправильный логин или пароль'});
         }
     }
+});
 
 
-
+postRequestApp.post('/admin/dashboard', (req, res) => {
+    const statusFilePath = './config/status.json';
+    const statusFilePath2 = './config/admin_users.json'; // путь к базе
     if (req.body && req.body.statreq === 'false'){
         const statusData = JSON.parse(fs.readFileSync(statusFilePath, 'utf8'));
         //const requestedKey = 'cite_open'; // Можно заменить на нужный ключ
@@ -42,6 +45,13 @@ postRequestApp.post('/admin', (req, res) => {
 
 
     }
+    if (req.body && req.body.config_req){
+        const statusFilePath = './config/status.json';
+        fs.readFile(statusFilePath, 'utf8', (err, data) => {
+            const jsonData = JSON.parse(data);
+            res.json(jsonData);
+        })
+    }
 
     if (req.body && req.body.open === 'false') {
         const statusData = JSON.parse(fs.readFileSync(statusFilePath, 'utf8'));
@@ -53,7 +63,7 @@ postRequestApp.post('/admin', (req, res) => {
         fs.renameSync('public/closed.html', 'public/index.html');
 
         res.json({
-            "cite_open": "false",
+            "message": "Сайт закрыт.",
         });
         site_close()
     }
@@ -67,7 +77,7 @@ postRequestApp.post('/admin', (req, res) => {
         fs.renameSync('public/noindex.html', 'public/index.html');
 
         res.json({
-            "cite_open": "true",
+            "message": "Сайт открыт.",
         });
         site_open()
     }
@@ -81,7 +91,7 @@ postRequestApp.post('/admin', (req, res) => {
         fs.renameSync('public/work.html', 'public/index.html');
 
         res.json({
-            "cite_dev": "false",
+            "message": "Сайт закрыт на тех.работы",
         });
         site_notex()
     }
@@ -95,10 +105,11 @@ postRequestApp.post('/admin', (req, res) => {
         fs.renameSync('public/noindex.html', 'public/index.html');
 
         res.json({
-            "cite_dev": "true",
+            "message": "Тех работы завершены.",
         });
         site_tex()
     }
+
 });
 
 

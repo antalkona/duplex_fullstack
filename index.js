@@ -53,7 +53,13 @@ app.get('/', (req, res) => {
 
 
 
+// Обработка 404 ошибки
+app.use((req, res, next) => {
+    res.status(404).sendFile(path.join(__dirname, 'public', 'errors', '404', "index.html"));
+});
 
+
+// ST
 
 // STOP - STOP - STOP - STOP - STOP - STOP - STOP - STOP
 // SERVER SETTINGS | НЕ ИЗМЕНЯТЬ -------------------------------
@@ -65,15 +71,19 @@ if ("SOCKET" in process.env) {
     }
     app.listen(socket, () => {
         fs.chmodSync(socket, 0660);
+        console.log(`Сервер запещен! Дата: ${new Date()}`);
         console.log(`Listening :${socket}`);
     });
 } else if ("PORT" in process.env) {
     app.listen(PORT, () => {
+        console.log(`Сервер запещен! Дата: ${new Date()}`);
+
         console.log(`Listening http:/:${PORT}/`);
     });
 
 } else {
     app.listen(3000, function(){
+        console.log(`Сервер запещен! Дата: ${new Date()}`);
         console.log('listening on *:3000');
     });
 }

@@ -9,7 +9,25 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
     <link rel="stylesheet" href="../elements/header/css/style.css">
 
-    <title>Школа Дуплекс</title>
+    <title>Расписание</title>
+    <link rel="icon" id="icon" href="#">
+    <script>
+        // Функция для получения иконки и установки пути к ней
+        function setFavicon() {
+            // Получаем доменное имя текущего сайта
+            const domain = window.location.origin;
+
+            // Устанавливаем путь к иконке (замените 'path/to/your/favicon.ico' на реальный путь)
+            const iconPath = domain + "/assets/images/icon/4.jpg";
+
+            // Устанавливаем иконку
+            document.getElementById("icon").href = iconPath;
+        }
+
+        // Вызываем функцию при загрузке страницы
+        window.onload = setFavicon;
+    </script>
+
 </head>
 <body>
 <header>

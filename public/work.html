@@ -6,7 +6,24 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Школа "Дуплекс"</title>
+    <link rel="icon" id="icon" href="#">
+    <script>
+        // Функция для получения иконки и установки пути к ней
+        function setFavicon() {
+            // Получаем доменное имя текущего сайта
+            const domain = window.location.origin;
+
+            // Устанавливаем путь к иконке (замените 'path/to/your/favicon.ico' на реальный путь)
+            const iconPath = domain + "/assets/images/icon/4.jpg";
+
+            // Устанавливаем иконку
+            document.getElementById("icon").href = iconPath;
+        }
+
+        // Вызываем функцию при загрузке страницы
+        window.onload = setFavicon;
+    </script>
 </head>
 <body>
 <div class="alert alert-secondary" role="alert">

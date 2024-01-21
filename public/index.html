@@ -16,86 +16,108 @@
     <script src="https://lidrekon.ru/slep/js/jquery.js"></script>
     <script src="https://lidrekon.ru/slep/js/uhpv-full.min.js"></script>
 
-    <title>Document</title>
+    <title>Школа "Дуплекс"</title>
+    <link rel="icon" id="icon" href="#">
+    <script>
+        // Функция для получения иконки и установки пути к ней
+        function setFavicon() {
+            // Получаем доменное имя текущего сайта
+            const domain = window.location.origin;
+
+            // Устанавливаем путь к иконке (замените 'path/to/your/favicon.ico' на реальный путь)
+            const iconPath = domain + "/assets/images/icon/4.jpg";
+
+            // Устанавливаем иконку
+            document.getElementById("icon").href = iconPath;
+        }
+
+        // Вызываем функцию при загрузке страницы
+        window.onload = setFavicon;
+    </script>
     <script src="./js/script.js"></script>
 </head>
 <body>
-    <header>
+<dialog id="dialog">
+    <h2 class="h2m" >Ученикам</h2>
 
-        <div class="main_head">
-            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <button onclick="window.dialog.close();" aria-label="close" class="x">❌</button>
+</dialog>
+<header>
 
-            <img src="./elements/header/img/Group%20233.png" alt="" class="h_logo">
-            <div class="h_pages">
-                <button class="h_main" onclick="open_header('')">Главная</button>
-                <button class="h_main" onclick="open_header('school')">Школа</button>
-                <button class="h_main" onclick="open_header('news')">Новости</button>
-                <button class="h_main" onclick="open_header('schedule')" >Расписание</button>
-            </div>
-            <div class="h_iconnaw">
-                <img data-bs-toggle="tooltip" data-bs-title="подсказок по умолчанию" title="Контакты" src="./elements/header/img/mail%201.png" alt="" class="h_inaw">
-                <img id="specialButton" style="cursor:pointer;" title="Версия для слабовидящих" src="./elements/header/img/view%201.png" alt="" class="h_inaw">
-                <img title="Поиск по сайту" src="./elements/header/img/search%201.png" alt="" class="h_inaw">
-                <img title="Меню" src="./elements/header/img/menu%201.png" alt="" class="h_inaw">
-                <script>
-                    const herd = location.origin
-                    function open_header(text){
-                        location.replace(herd + "/" + text)
-                        console.log(herd + "/" + text)
-                    }
-                </script>
-            </div>
-            <h1 class="test">test</h1>
+    <div class="main_head">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+
+        <img src="./elements/header/img/Group%20233.png" alt="" class="h_logo">
+        <div class="h_pages">
+            <button class="h_main" onclick="open_header('')">Главная</button>
+            <button class="h_main" onclick="open_header('school')">Школа</button>
+            <button class="h_main" onclick="open_header('news')">Новости</button>
+            <button class="h_main" onclick="open_header('schedule')" >Расписание</button>
         </div>
-        <iframe id="frame" src="./elements/widgets/cookie/cookie.html" width="100%" height="100%" frameborder="0"></iframe>
-    </header>
-    <div class="hide1">
-        <h1>Мобильная версия в разработке. Воспользуйтесь ПК.</h1>
+        <div class="h_iconnaw">
+            <img data-bs-toggle="tooltip" data-bs-title="подсказок по умолчанию" title="Контакты" src="./elements/header/img/mail%201.png" alt="" class="h_inaw">
+            <img id="specialButton" style="cursor:pointer;" title="Версия для слабовидящих" src="./elements/header/img/view%201.png" alt="" class="h_inaw">
+            <img title="Поиск по сайту" src="./elements/header/img/search%201.png" alt="" class="h_inaw">
+            <img title="Меню" src="./elements/header/img/menu%201.png" alt="" class="h_inaw">
+            <script>
+                const herd = location.origin
+                function open_header(text){
+                    location.replace(herd + "/" + text)
+                    console.log(herd + "/" + text)
+                }
+            </script>
+        </div>
+        <h1 class="test">test</h1>
     </div>
-    <div class="main">
-        <img src="" id="m_img" alt="" class="back">
+    <iframe id="frame" src="./elements/widgets/cookie/cookie.html" width="100%" height="100%" frameborder="0"></iframe>
+</header>
+<div class="hide1">
+    <h1>Мобильная версия в разработке. Воспользуйтесь ПК.</h1>
+</div>
+<div class="main">
+    <img src="" id="m_img" alt="" class="back">
 
 
-        <img id="right" class="n_right" src="./img/right.png" alt="" >
-        <img id="left" class="n_left" src="./img/left.png" alt="" >
-        <div class="text_box">
-            <h1 id="txt_card" class="card">
+    <img id="right" class="n_right" src="./img/right.png" alt="" >
+    <img id="left" class="n_left" src="./img/left.png" alt="" >
+    <div class="text_box">
+        <h1 id="txt_card" class="card">
 
-            </h1>
+        </h1>
+    </div>
+
+</div>
+<div class="card_link">
+    <div class="card1">
+        <div href="#" onclick="open_header('schedule')" class="c2">
+            <h1 class="c_title">Расписание</h1>
+            <div class="c_line"></div>
+            <img src="./img/event%201.png" alt="" class="c_img1">
         </div>
 
     </div>
-    <div class="card_link">
-        <div class="card1">
-            <div href="#" onclick="open_header('schedule')" class="c2">
-                <h1 class="c_title">Расписание</h1>
-                <div class="c_line"></div>
-                <img src="./img/event%201.png" alt="" class="c_img1">
-            </div>
-
+    <div onclick="window.dialog.showModal();" class="card2">
+        <div class="c2">
+            <h1 class="c_title">Ученикам</h1>
+            <div class="c_line"></div>
+            <img src="./img/graduated%201.png" alt="" class="c_img2">
         </div>
-        <div class="card2">
-            <div class="c2">
-                <h1 class="c_title">Ученикам</h1>
-                <div class="c_line"></div>
-                <img src="./img/graduated%201.png" alt="" class="c_img2">
-            </div>
 
-        </div>
-        <div class="card3">
-            <div class="c2">
-                <h1 class="c_title">Родителям</h1>
-                <div class="c_line"></div>
-                <img src="./img/parents%201.png" alt="" class="c_img2">
-            </div>
-
-        </div>
     </div>
-    <foote>
-        <iframe src="./elements/footer/news.html" width="100%"  frameborder="0"></iframe>
-    </foote>
-    <script>
+    <div class="card3">
+        <div class="c2">
+            <h1 class="c_title">Родителям</h1>
+            <div class="c_line"></div>
+            <img src="./img/parents%201.png" alt="" class="c_img2">
+        </div>
 
-    </script>
+    </div>
+</div>
+<foote>
+    <iframe src="./elements/footer/news.html" width="100%"  frameborder="0"></iframe>
+</foote>
+<script>
+
+</script>
 </body>
 </html>

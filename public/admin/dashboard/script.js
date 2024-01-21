@@ -1,5 +1,7 @@
 const mainElements = document.querySelectorAll('.main');
-
+var cite_open;
+var cite_dev;
+var message_value;
 function hideAllMainElements() {
     mainElements.forEach(function(element) {
         element.style.display = 'none';
@@ -126,3 +128,116 @@ if (auth === "true") {
 console.log(userName);
 console.log(userId);
 console.log(auth);
+
+
+// Делаем гет-запрос к серверу
+
+
+function postRequestDashboard() {
+    fetch('/admin/dashboard', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            "config_req": "true"
+        })
+    })
+        .then(response => response.json())
+        .then(data => {
+            cite_open = data.cite_open;
+            cite_dev = data.cite_dev;
+            console.log(cite_open)
+            console.log(cite_dev)
+
+        })
+        .catch(error => console.error('Ошибка:', error));
+}
+
+window.onload = function() {
+    postRequestDashboard()
+    setTimeout(setCiteStatus, 2000)
+};
+function setCiteStatus(){
+    console.log('setCiteStatus')
+    if (cite_open === 'true'){
+        document.getElementById('closeOpen').checked = true
+        console.log('on')
+    }
+    if (cite_open === 'false'){
+        document.getElementById('closeOpen').checked = false
+        console.log('off')
+
+    }
+    else if(cite_dev === 'true'){
+        document.getElementById('tehOnOf').checked = true
+
+    }
+    else if(cite_dev === 'false'){
+        document.getElementById('tehOnOf').checked = false
+
+    }
+}
+
+function onclickcheckboxopen(values, bool){
+    stat = document.getElementById(values).checked
+    sendStatusPOST(values, bool, stat)
+}
+function sendStatusPOST(value, type, bool){
+    var data = {};
+    console.log(value + ' ' +  type + ' ' + bool)
+    data["ss"] = stat.toString();
+    console.log(data)
+    fetch('/admin/dashboard', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+        .then(response => response.json())
+        .then(responseData => {
+            // Извлекаем значение "message" из ответа и сохраняем в переменной
+            console.log('--------------------------------')
+            if (responseData.message) {
+                console.log(responseData.message);
+                message_value = responseData.message;
+                console.log('Значение message:', message_value);
+                message();
+            } else {
+                console.log(responseData);
+                var err = responseData.errord;
+                console.log('Значение error:', err);
+                errore(err)
+
+
+
+
+
+            }
+
+
+
+        })
+        .catch(error => console.error('Ошибка:', error));
+}
+function message(){
+    console.log('Сообщение для Alert' + message_value)
+    document.getElementById('alertmsg').style.display = 'block';
+    document.getElementById('alertmsg').textContent = message_value;
+    setTimeout(function() {
+        document.getElementById('alertmsg').style.display = 'none';
+    }, 10000);
+
+    console.log('--------------------------------')
+}
+function errore(errord){
+    console.log('Сообщение для Alert' + errord)
+    document.getElementById('alerterr').style.display = 'block';
+    document.getElementById('alerterr').textContent = errord;
+    setTimeout(function() {
+        document.getElementById('alerterr').style.display = 'none';
+    }, 10000);
+
+    console.log('--------------------------------')
+}
