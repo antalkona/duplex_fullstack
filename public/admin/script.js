@@ -24,8 +24,23 @@ function submitForm() {
                 document.cookie = `authorization=true; max-age=${expiration}`;
 
                 // Показываем сообщение о успешной авторизации
-                document.getElementById('authResponse').style.left = '2%'
+                document.getElementById('authResponse').style.left = '2%';
                 document.getElementById('authResponse').style.display = 'block';
+
+                document.getElementById('authResponse').style.left = '2%';
+                document.getElementById('authResponse').style.display = 'block';
+
+                async function updateText() {
+                    for (let i = 5; i >= 0; i--) {
+                        document.getElementById('authtime').textContent = i;
+                        console.log(i);
+
+                        await new Promise(resolve => setTimeout(resolve, 1000));
+                    }
+                }
+
+                updateText();
+
                 //document.getElementById('authResponse').innerText = JSON.stringify(data);
 
                 // Отложенная переадресация на другую страницу через 5 секунд

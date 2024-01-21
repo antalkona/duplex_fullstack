@@ -36,12 +36,12 @@
     </script>
     <script src="./js/script.js"></script>
 </head>
-<body>
-<dialog id="dialog">
-    <h2 class="h2m" >Ученикам</h2>
 
-    <button onclick="window.dialog.close();" aria-label="close" class="x">❌</button>
-</dialog>
+<body>
+<!--moadl-->
+<div class="modalbg" id="modalbg"></div>
+
+<!--moadl-->
 <header>
 
     <div class="main_head">
@@ -96,7 +96,7 @@
         </div>
 
     </div>
-    <div onclick="window.dialog.showModal();" class="card2">
+    <div onclick="toggleModal()" class="card2">
         <div class="c2">
             <h1 class="c_title">Ученикам</h1>
             <div class="c_line"></div>
@@ -113,6 +113,7 @@
 
     </div>
 </div>
+
 <foote>
     <iframe src="./elements/footer/news.html" width="100%"  frameborder="0"></iframe>
 </foote>

@@ -14,14 +14,14 @@ startRequest.get('/start', (req, res) => {
 startRequest.post('/start', (req, res) => {
     if (req.body && req.body.ADMINSET) {
         // Получаем данные из тела запроса
-        const {id, lgoin, name, password} = req.body.ADMINSET;
+        const {id, login, name, password} = req.body.ADMINSET;
 
         // Читаем файл admin_users.json
         const filePath = path.join(__dirname, 'config', 'admin_users.json');
         const adminUsers = JSON.parse(fs.readFileSync(filePath, 'utf8'));
 
         // Создаем нового пользователя
-        const newUser = {id, lgoin, name, password};
+        const newUser = {id, login, name, password};
 
         // Добавляем нового пользователя в массив пользователей
         adminUsers.push(newUser);

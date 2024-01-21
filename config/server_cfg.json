@@ -1,17 +1,17 @@
 {
   "LOCALSERVER": {
     "SERVER-ID": "1230123",
-    "SERVER-NAME": "",
+    "SERVER-NAME": "Duplex",
     "SERVER-BUILDS": "1",
     "SERVER-VERSION": "1.0",
-    "SERVER-HOSTING": "",
-    "SERVER-PORT": "",
-    "SERVER-DOMAIN": "",
+    "SERVER-HOSTING": "2",
+    "SERVER-PORT": "3001",
+    "SERVER-DOMAIN": "https://zentas.ru",
     "YANDEX-METRIC": "",
     "GOOGLE-ANALITICS": "",
-    "LES": "",
+    "LES": "-",
     "SERVER_ACTIVE": "",
-    "EMAIL": ""
+    "EMAIL": "antalkono789@gmail.com"
   },
   "GLOBAL-SERVER": {
     "SERVER-ID": "1",

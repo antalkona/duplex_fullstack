@@ -121,7 +121,8 @@ if (auth === "true") {
     }
 
 } else {
-    location.replace('google.com')
+    href = location.origin
+    location.replace(href + '/admin')
 }
 
 // Теперь переменная userName содержит значение из cookie с именем "name"

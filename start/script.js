@@ -26,7 +26,7 @@ function step3(){
     let data = {
         "ADMINSET":{
             "id": `${sixDigitNumber}`,
-            "lgoin": `${input_login}`,
+            "login": `${input_login}`,
             "name": `${input_name}`,
             "password": `${input_password}`
         }

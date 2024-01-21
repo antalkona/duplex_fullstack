@@ -18,7 +18,7 @@ postRequestApp.post('/admin', (req, res) => {
         const {login, password} = req.body;
         const statusData = JSON.parse(fs.readFileSync(statusFilePath2, 'utf8'));
 
-        const user = statusData.find(user => user.lgoin === login && user.password === password);
+        const user = statusData.find(user => user.login === login && user.password === password);
 
         if (user) {
             return res.status(200).json({message: 'Успешная авторизация', user});

@@ -106,3 +106,9 @@ function rasp(){
 
     location.replace(href)
 }
+function toggleModal() {
+    console.log('clck')
+    const modal = document.getElementById('modalbg');
+    modal.style.display = 'block';
+    modal.classList.toggle('modal-visible');
+}
