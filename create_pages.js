@@ -61,9 +61,10 @@ const writePagesJsonFile = (pages) => {
     }
 };
 
-// Обработчик POST запроса /pages/create
-pagesRequestApp.post('/pages/create', (req, res) => {
+// Обработчик POST запроса /pages/pages
+pagesRequestApp.post('/admin/dashboard/pages', (req, res) => {
     // Чтение текущего значения file_count
+    console.log('Запрос получен')
     const config = readConfigFile();  // Вызываем функцию для чтения файла конфигурации
     if (!config) {
         res.status(500).send('Internal Server Error');  // В случае ошибки отправляем статус 500

@@ -36,5 +36,5 @@ const currentDomain = window.location.protocol + "//" + window.location.host;
 
 const uploadLink = document.getElementById('uploadLink');
 const uploadLink2 = document.getElementById('uploadLink2');
-uploadLink.href = currentDomain + "/admin/dashboard/create";
-uploadLink2.href = currentDomain + "/admin/dashboard/create/del";
+uploadLink.href = currentDomain + "/admin/dashboard/pages";
+uploadLink2.href = currentDomain + "/admin/dashboard/pages/del";
