@@ -27,7 +27,7 @@ fs.readFile(configPath, 'utf8', (err, data) => {
 // POST-запрос на загрузку файла
 // POST-запрос на загрузку файла
 // POST-запрос на загрузку файла
-pagesRequestApp2.post('/schedule/create', (req, res) => {
+pagesRequestApp2.post('/admin/dashboard/create', (req, res) => {
     if (!req.files || Object.keys(req.files).length === 0) {
         return res.status(400).send('Файл не был загружен.');
     }
@@ -102,7 +102,7 @@ pagesRequestApp2.get('/schedule/data', (req, res) => {
 
 // POST-запрос на удаление файла
 // POST-запрос на удаление файла
-pagesRequestApp2.post('/schedule/create/del', (req, res) => {
+pagesRequestApp2.post('/admin/dashboard/create/del', (req, res) => {
     const fileIdToDelete = req.body.del;
 
     fs.readFile(dataPath, 'utf8', (err, data) => {
@@ -134,7 +134,7 @@ pagesRequestApp2.post('/schedule/create/del', (req, res) => {
     });
 });
 // GET-запрос для получения данных из файла files.json
-pagesRequestApp2.get('/schedule/create/data', (req, res) => {
+pagesRequestApp2.get('/admin/dashboard/create/data', (req, res) => {
     fs.readFile(dataPath, 'utf8', (err, data) => {
         if (err) {
             res.status(500).send('Ошибка чтения файла данных.');
