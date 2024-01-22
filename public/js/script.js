@@ -107,8 +107,61 @@ function rasp(){
     location.replace(href)
 }
 function toggleModal() {
-    console.log('clck')
+    const animatedElement = document.querySelector('.modal_window');
+    console.log('clck');
     const modal = document.getElementById('modalbg');
-    modal.style.display = 'block';
+    modal.style.display = 'flex';
     modal.classList.toggle('modal-visible');
+    animate();
+
+    function animate() {
+        // Добавляем класс для запуска анимации
+        animatedElement.classList.add('animate-slide');
+    }
+
+    const butcl = document.getElementById('close_btn');
+    butcl.onclick = function () {
+        animate();
+        function animate() {
+            // Добавляем класс для запуска анимации закрытия
+            animatedElement.classList.add('unanimate-slide');
+        }
+        modal.classList.toggle('modal-visible');
+        setTimeout(() => {
+
+            modal.style.display = 'none';
+            // Убираем класс анимации закрытия
+            animatedElement.classList.remove('unanimate-slide');
+        }, 300); // Укажите тот же период, что и в анимации закрытия
+    };
+}
+
+function toggleModal2() {
+    const animatedElement = document.querySelector('.modal_window');
+    console.log('clck');
+    const modal = document.getElementById('modalbg');
+    modal.style.display = 'flex';
+    modal.classList.toggle('modal-visible');
+    animate();
+
+    function animate() {
+        // Добавляем класс для запуска анимации
+        animatedElement.classList.add('animate-slide');
+    }
+
+    const butcl = document.getElementById('close_btn');
+    butcl.onclick = function () {
+        animate();
+        function animate() {
+            // Добавляем класс для запуска анимации закрытия
+            animatedElement.classList.add('unanimate-slide');
+        }
+        modal.classList.toggle('modal-visible');
+        setTimeout(() => {
+
+            modal.style.display = 'none';
+            // Убираем класс анимации закрытия
+            animatedElement.classList.remove('unanimate-slide');
+        }, 300); // Укажите тот же период, что и в анимации закрытия
+    };
 }
