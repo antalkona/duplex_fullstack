@@ -1,0 +1,17 @@
+{
+  "card1": {
+    "title": "В школе прошёл “Хакатон по информатике",
+    "image": "https://dev-z01.zentas.tech/img/WLEJmAeugbw%201.png",
+    "link": ""
+  },
+  "card2": {
+    "title": "8В посетил профориентационный хакатон \"ПРОФИТИМ\"",
+    "image": "https://dev-z01.zentas.tech/img/4rRA_bgoAeE.jpg",
+    "link": ""
+  },
+  "card3": {
+    "title": "Данная карточка не заполнена",
+    "image": "https://dev-z01.zentas.tech/img/5488082.png",
+    "link": ""
+  }
+}

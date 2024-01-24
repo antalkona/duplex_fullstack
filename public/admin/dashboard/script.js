@@ -135,7 +135,7 @@ console.log(auth);
 
 
 function postRequestDashboard() {
-    fetch('/admin/dashboard', {
+    fetch('/admin/dashboard/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

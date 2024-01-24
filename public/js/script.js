@@ -10,6 +10,32 @@ fetch('../config_admin.json')
     .catch(error => {
         console.error('Ошибка чтения файла:', error);
     });
+fetch('/data', {
+    method: "post",
+    headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+    },
+})
+    .then(response => response.json())
+    .then(data => {
+        updateCarousel(data);
+    })
+    .catch(error => console.error(error));
+
+function updateCarousel(data) {
+    // Обновление карточки 1
+    document.getElementById('cc1_title').textContent = data.card1.title;
+    document.getElementById('cc1_img').src = data.card1.image;
+
+    // Обновление карточки 2
+    document.getElementById('cc2_title').textContent = data.card2.title;
+    document.getElementById('cc2_img').src = data.card2.image;
+
+    // Обновление карточки 3
+    document.getElementById('cc3_title').textContent = data.card3.title;
+    document.getElementById('cc3_img').src = data.card3.image;
+}
 
 document.addEventListener('DOMContentLoaded', function() {
     const leftElement = document.getElementById('left');
@@ -137,9 +163,9 @@ function toggleModal() {
 }
 
 function toggleModal2() {
-    const animatedElement = document.querySelector('.modal_window');
+    const animatedElement = document.querySelector('.modal_window2');
     console.log('clck');
-    const modal = document.getElementById('modalbg');
+    const modal = document.getElementById('modalbg2');
     modal.style.display = 'flex';
     modal.classList.toggle('modal-visible');
     animate();
@@ -149,7 +175,7 @@ function toggleModal2() {
         animatedElement.classList.add('animate-slide');
     }
 
-    const butcl = document.getElementById('close_btn');
+    const butcl = document.getElementById('close_btn2');
     butcl.onclick = function () {
         animate();
         function animate() {

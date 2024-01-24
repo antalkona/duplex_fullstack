@@ -28,7 +28,24 @@ postRequestApp.post('/admin', (req, res) => {
     }
 });
 
+postRequestApp.post('/admin/mainpage/car', (req, res) => {
+    const requestData = req.body;
+    const filePath = './public/assets/carusel.json';
+    const currentData = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
 
+    if (requestData.card1) {
+        currentData.card1 = requestData.card1;
+    }
+    if (requestData.card2) {
+        currentData.card2 = requestData.card2;
+    }
+    if (requestData.card3) {
+        currentData.card3 = requestData.card3;
+    }
+
+    fs.writeFileSync(filePath, JSON.stringify(currentData, null, 2), 'utf-8');
+    res.status(200).json({ message: 'Данные успешно обновлены ()' });
+});
 postRequestApp.post('/admin/dashboard', (req, res) => {
     const statusFilePath = './config/status.json';
     const statusFilePath2 = './config/admin_users.json'; // путь к базе

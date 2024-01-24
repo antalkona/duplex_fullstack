@@ -11,6 +11,7 @@ const postRequestApp = require('./adminRoutes'); // Путь к файлу postR
 const pageRequestAppPage = require('./create_pages'); // Путь к файлу postRequest.js
 const pageRequestAppPage2 = require('./create_calendar'); // Путь к файлу postRequest.js
 const startRequest = require('./getstart');
+const mainPage = require('./main');
 
     // telegram bot  init
 const { startTelegramBot, server_start, restartServer } = require('./telegram_bot');
@@ -35,6 +36,7 @@ app.use(postRequestApp);
 app.use(pageRequestAppPage);
 app.use(pageRequestAppPage2);
 app.use(startRequest)
+app.use(mainPage);
 
 
 // ---------------------------------------------------------------

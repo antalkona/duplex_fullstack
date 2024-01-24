@@ -1,40 +1,55 @@
-function submitForm() {
-    const form = document.getElementById('uploadForm');
+function Sendtitle(){
+    const title = document.getElementById('floatingInput')
+    fetch("/admin/mainpage", {
+        method: "post",
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
 
-    // Создаем объект FormData для передачи данных формы
-    const formData = new FormData(form);
-
-    fetch('/schedule/create', {
-        method: 'POST',
-        body: formData,
-    })
-        .then(response => response.json())
-        .then(data => {
-            if (data.message) {
-                document.getElementById('message').style.display = 'block'
-                showMessage(data.message);
-                setTimeout(hide, 6000)
-                function hide(){
-                    document.getElementById('message').style.display = 'none'
-
-                }
-            }
+        //make sure to serialize your JSON body
+        body: JSON.stringify({
+            "title": `${title.value}`,
         })
-        .catch(error => console.error('Error fetching data:', error));
+    })
+        .then(response => response.json())  // Обработка ответа в формате JSON
+        .then(data => {
+            console.log(data);  // Вывод данных в консоль
+        })
+        .catch(error => {
+            console.error('Error:', error);  // Обработка ошибок
+        });
+
 }
 
-function showMessage(message) {
-    const messageElement = document.getElementById('message');
-    if (messageElement) {
-        messageElement.textContent = message;
-        messageElement.style.display = 'block';
+function carusel(num){
+    const text = document.getElementById(`c${num}_title`)
+    const img = document.getElementById(`c${num}_img`)
+    const card = `card${num}`
+    const data = {
+        [card]: {
+            title: text.value,
+            image: img.value,
+            link: "null"
+        }
     }
+    console.log(data);
+    fetch("/admin/mainpage", {
+        method: "post",
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+
+        //make sure to serialize your JSON body
+        body: JSON.stringify(data)
+
+    })
+        .then(response => response.json())  // Обработка ответа в формате JSON
+        .then(data => {
+            console.log(data);  // Вывод данных в консоль
+        })
+        .catch(error => {
+            console.error('Error:', error);  // Обработка ошибок
+        });
 }
-
-
-const currentDomain = window.location.protocol + "//" + window.location.host;
-
-const uploadLink = document.getElementById('uploadLink');
-const uploadLink2 = document.getElementById('uploadLink2');
-uploadLink.href = currentDomain + "/schedule/pages";
-uploadLink2.href = currentDomain + "/schedule/pages/del";
