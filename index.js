@@ -44,12 +44,16 @@ app.use(mainPage);
 
 // ПЕРЕАДРЕСАЦИИ
 app.get('/', (req, res) => {
+    console.log('test')
     const indexPath = path.join(__dirname, 'public', 'index.html');
     const data = fs.readFileSync(indexPath, 'utf8');
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/html;charset=utf-8');
     res.end(data);
 });
+
+
+
 // ---------------------------------------------------------------
 
 

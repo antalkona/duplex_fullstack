@@ -23,6 +23,13 @@ fetch('/data', {
     })
     .catch(error => console.error(error));
 
+document.addEventListener("DOMContentLoaded", function() {
+    const platform = navigator.platform
+    const language = navigator.language
+    const appVersion = navigator.appVersion;
+    
+});
+
 function updateCarousel(data) {
     // Обновление карточки 1
     document.getElementById('cc1_title').textContent = data.card1.title;
