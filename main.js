@@ -113,6 +113,64 @@ mainPage.post('/students', (req, res) => {
         }
     });
 })
+mainPage.post('/admin/mainpage/students/del', (req, res) => {
+    if (req.body && req.body.del) {
+        const caruselPath = path.join(__dirname, 'public', 'assets', 'students.json');
+
+        // Чтение данных из файла
+        fs.readFile(caruselPath, 'utf8', (err, data) => {
+            if (err) return res.status(500).json({ message: "Ошибка при чтении файла" });
+
+            // Попытка парсинга JSON и удаление объекта с указанным id
+            const students = JSON.parse(data || '[]');
+            const index = students.findIndex(student => student.id === req.body.del);
+            if (index !== -1) students.splice(index, 1);
+
+            // Запись изменений обратно в файл
+            fs.writeFile(caruselPath, JSON.stringify(students, null, 2), 'utf8', (err) => {
+                if (err) return res.status(500).json({ message: "Ошибка при записи файла" });
+
+                return res.json({ message: "Успешно" });
+            });
+        });
+
+    }
+
+    if (req.body && req.body.edit && req.body.edit.id) {
+        const caruselPath = path.join(__dirname, 'public', 'assets', 'students.json');
+
+        // Чтение данных из файла
+        fs.readFile(caruselPath, 'utf8', (err, data) => {
+            if (err) return res.status(500).json({message: "Ошибка при чтении файла"});
+
+            // Попытка парсинга JSON и поиск объекта с указанным id
+            const students = JSON.parse(data || '[]');
+            const index = students.findIndex(student => student.id === req.body.edit.id);
+
+            if (index !== -1) {
+                // Замена значений в объекте по указанному id
+                students[index] = {
+                    id: req.body.edit.id,
+                    priority: req.body.edit.priority,
+                    text: req.body.edit.text,
+                    link: req.body.edit.link
+                };
+
+                // Запись изменений обратно в файл
+                fs.writeFile(caruselPath, JSON.stringify(students, null, 2), 'utf8', (err) => {
+                    if (err) return res.status(500).json({message: "Ошибка при записи файла"});
+
+                    return res.json({message: "Успешно"});
+                });
+            } else {
+                return res.status(404).json({message: "Студент с указанным id не найден"});
+            }
+
+        })
+    }
+
+});
+
 mainPage.set('trust proxy', true); // Разрешаем использование заголовка X-Forwarded-For
 
 mainPage.post('/userdata', (req, res) => {

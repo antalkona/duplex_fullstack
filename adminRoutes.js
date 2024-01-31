@@ -80,7 +80,7 @@ postRequestApp.post('/admin/dashboard', (req, res) => {
 
 
         fs.renameSync('public/index.html', 'public/noindex.html');
-        fs.renameSync('public/index.html', 'public/index.html');
+        fs.renameSync('public/closed.html', 'public/index.html');
 
         res.json({
             "message": "Сайт закрыт.",
@@ -93,7 +93,7 @@ postRequestApp.post('/admin/dashboard', (req, res) => {
         fs.writeFileSync(statusFilePath, JSON.stringify(statusData, null, 2));
 
         console.log(`Получен POST за прос со стра ницы /admin содержащий : `, req.body);
-        fs.renameSync('public/index.html', 'public/index.html');
+        fs.renameSync('public/index.html', 'public/closed.html');
         fs.renameSync('public/noindex.html', 'public/index.html');
 
         res.json({
