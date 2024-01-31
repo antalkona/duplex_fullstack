@@ -24,10 +24,40 @@ fetch('/data', {
     .catch(error => console.error(error));
 
 document.addEventListener("DOMContentLoaded", function() {
+    function generate16DigitCode() {
+        let code = '';
+        const characters = '0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM';
+
+        for (let i = 0; i < 16; i++) {
+            const randomIndex = Math.floor(Math.random() * characters.length);
+            code += characters.charAt(randomIndex);
+        }
+
+        return code;
+    }
+    const myVariable = generate16DigitCode();
     const platform = navigator.platform
     const language = navigator.language
     const appVersion = navigator.appVersion;
-    
+    const currentUrl = window.location.href;
+
+
+    fetch("/userdata", {
+        method: "POST",
+        body: JSON.stringify({
+            "code": myVariable,
+            "platform": platform,
+            "language": language,
+            "appVersion": appVersion,
+            "url": currentUrl
+        }),
+        headers: {
+            "Content-Type": "application/json"
+        }
+    }).then(response => {
+        // Обработка ответа сервера, если нужно
+    });
+
 });
 
 function updateCarousel(data) {

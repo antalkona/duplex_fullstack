@@ -113,10 +113,33 @@ mainPage.post('/students', (req, res) => {
         }
     });
 })
+mainPage.set('trust proxy', true); // Разрешаем использование заголовка X-Forwarded-For
+
 mainPage.post('/userdata', (req, res) => {
-    console.log(req.ip);
-    res.status(200).json({ message: 'IP лог - успешно'})
-    // Дополнительная обработка POST-запроса
+    const clientIp = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+    const currentTime = new Date();
+    const formattedTime = `${formatNumber(currentTime.getDate())}.${formatNumber(currentTime.getMonth() + 1)}.${currentTime.getFullYear()}/${formatNumber(currentTime.getHours())}:${formatNumber(currentTime.getMinutes())}`;
+
+    function formatNumber(num) {
+        return num.toString().padStart(2, '0');
+    }
+    const req_data = {
+        "code": req.body.code,
+        "platform": req.body.platform,
+        "language": req.body.language,
+        "appVersion": req.body.appVersion,
+        "url": req.body.url,
+        "time": formattedTime,
+        "ip": clientIp
+    };
+
+    const pagesFolderPath = path.join(__dirname, 'logs', 'visits');
+    const parentsFilePath = path.join(pagesFolderPath, 'visit.json');
+    const currentData = JSON.parse(fs.readFileSync(parentsFilePath, 'utf8')) || [];    // Чтение текущих данных из файла или использование пустого массива, если чтение не удалось
+    currentData.push(req_data); // Добавление новых данных
+    fs.writeFileSync(parentsFilePath, JSON.stringify(currentData, null, 2), 'utf8'); // Запись обновленных данных обратно в файл
+    console.log(req_data);
+    // Далее можете обрабатывать данные или отправлять ответ клиенту
 });
 
 module.exports = mainPage;

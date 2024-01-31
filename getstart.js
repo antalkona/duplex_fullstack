@@ -3,6 +3,7 @@ const fs = require("fs");
 const path = require('path');
 
 const startRequest = express.Router(); // Заменяем express() на express.Router()
+startRequest.use(express.static(path.join(__dirname, 'start')));
 
 startRequest.get('/start', (req, res) => {
     const indexPath = path.join(__dirname, 'start', 'index.html');

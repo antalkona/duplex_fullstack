@@ -49,6 +49,7 @@ postRequestApp.post('/admin/mainpage/car', (req, res) => {
 postRequestApp.post('/admin/dashboard', (req, res) => {
     const statusFilePath = './config/status.json';
     const statusFilePath2 = './config/admin_users.json'; // путь к базе
+    console.log(req.body)
     if (req.body && req.body.statreq === 'false'){
         const statusData = JSON.parse(fs.readFileSync(statusFilePath, 'utf8'));
         //const requestedKey = 'cite_open'; // Можно заменить на нужный ключ
@@ -71,13 +72,15 @@ postRequestApp.post('/admin/dashboard', (req, res) => {
     }
 
     if (req.body && req.body.open === 'false') {
+        console.log('Suesses')
+
         const statusData = JSON.parse(fs.readFileSync(statusFilePath, 'utf8'));
         statusData.cite_open = "false";
         fs.writeFileSync(statusFilePath, JSON.stringify(statusData, null, 2));
 
 
         fs.renameSync('public/index.html', 'public/noindex.html');
-        fs.renameSync('public/closed.html', 'public/index.html');
+        fs.renameSync('public/index.html', 'public/index.html');
 
         res.json({
             "message": "Сайт закрыт.",
@@ -90,7 +93,7 @@ postRequestApp.post('/admin/dashboard', (req, res) => {
         fs.writeFileSync(statusFilePath, JSON.stringify(statusData, null, 2));
 
         console.log(`Получен POST за прос со стра ницы /admin содержащий : `, req.body);
-        fs.renameSync('public/index.html', 'public/closed.html');
+        fs.renameSync('public/index.html', 'public/index.html');
         fs.renameSync('public/noindex.html', 'public/index.html');
 
         res.json({
@@ -140,6 +143,12 @@ postRequestApp.get('/admin/dev/check/admin-users', (req, res) => {
     res.send(`https://[доменное имя сайта]/admin/dev/admin-users/code/${randomNumber}`);
 
 })
+
+postRequestApp.get('/admin/dev/check/visits', (req, res) => {
+    console.log('Json +')
+    res.send(`https://[доменное имя сайта]/admin/dev/visits/code/${randomNumber}`);
+
+})
 postRequestApp.get(`/admin/dev/check/server-cfg/code/${randomNumber}`, (req, res) => {
     console.log('Json +');
 
@@ -160,6 +169,21 @@ postRequestApp.get(`/admin/dev/check/admin-users/code/${randomNumber}`, (req, re
     console.log('Json +');
 
     const filePath = path.join(__dirname, 'config', 'admin_users.json'); // Путь к файлу
+
+    try {
+        const data = fs.readFileSync(filePath, 'utf8');
+        res.statusCode = 200;
+        res.setHeader('Content-Type', 'application/json;charset=utf-8');
+        res.send(data);
+    } catch (error) {
+        console.error('Error reading file:', error);
+        res.statusCode = 500;
+        res.send('Error reading file');
+    }
+});postRequestApp.get(`/admin/dev/check/visits/code/${randomNumber}`, (req, res) => {
+    console.log('Json +');
+
+    const filePath = path.join(__dirname, 'logs', 'visits', 'visit.json'); // Путь к файлу
 
     try {
         const data = fs.readFileSync(filePath, 'utf8');

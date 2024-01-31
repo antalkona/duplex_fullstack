@@ -28,7 +28,6 @@ const app = express(); // EXPRESS - для сайта
 
 // ПОДКЛЮЧЕНИЕ ИСПОЛЬЗОВАНИЙ К ПРИЛОЖЕНИЮ
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.static(path.join(__dirname, 'start')));
 app.use(express.json());
 app.use(bodyParser.json()); // Используем bodyParser для парсинга JSON данных
 

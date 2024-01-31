@@ -187,7 +187,7 @@ function onclickcheckboxopen(values, bool){
 function sendStatusPOST(value, type, bool){
     var data = {};
     console.log(value + ' ' +  type + ' ' + bool)
-    data["ss"] = stat.toString();
+    data[type] = bool.toString();
     console.log(data)
     fetch('/admin/dashboard', {
         method: 'POST',
