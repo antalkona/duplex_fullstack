@@ -242,3 +242,11 @@ function errore(errord){
 
     console.log('--------------------------------')
 }
+
+function link(url){
+    const currentDomain = window.location.protocol + '//' + window.location.hostname;
+    console.log(currentDomain);
+    window.open(`${currentDomain}${url}`, '_blank');
+
+
+}

@@ -1,17 +1,14 @@
 {
   "LOCALSERVER": {
     "SERVER-ID": "1230123",
-    "SERVER-NAME": "",
+    "SERVER-NAME": "Duplex",
     "SERVER-BUILDS": "1",
     "SERVER-VERSION": "1.0",
-    "SERVER-HOSTING": "",
     "SERVER-PORT": "",
     "SERVER-DOMAIN": "",
     "YANDEX-METRIC": "",
     "GOOGLE-ANALITICS": "",
-    "LES": "",
-    "SERVER_ACTIVE": "",
-    "EMAIL": ""
+    "SERVER_ACTIVE": ""
   },
   "GLOBAL-SERVER": {
     "SERVER-ID": "1",
@@ -28,7 +25,8 @@
     "TELEGRAM-TOKEN": "6485069394:AAE_17sk-oTRwFZychn1XInDMIuUbxq6orQ",
     "TG_LOGIN-CODE": "1234",
     "TG_WHITE-LIST": [
-      "1642661427"
+      "1642661427",
+      "6782258880"
     ]
   }
 }

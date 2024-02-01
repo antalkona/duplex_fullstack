@@ -40,38 +40,39 @@
 
 <body>
 <!--moadl-->
-<div class="modalbg" id="modalbg">
-    <div class="modal_window" id="modalWindow">
-        <img src="./img/close.png" alt="" class="close_btn" id="close_btn">
-        <h1 class="m_title">Родителям:</h1>
-        <div class="m_content">
-            <div class="m_right">
-                <a href="#" class="m_u_link">ЭПОС</a>
-            </div>
-            <div class="m_left">
-                <a href="#" class="m_u_link">Столовая</a>
+<div id="moadlbg-1" class="modalbg">
+    <div class="modalw">
+        <div class="m_header">
+            <div class="m_t_box">
+                <h1 class="m_title">Ученикам</h1>
+                <div class="blueline"></div>
 
             </div>
+
+            <img src="./img/close.png" alt="" onclick="closeMoadl(1)" class="closem">
+        </div>
+        <div class="m_cont" id="stud_cont">
+
         </div>
     </div>
 </div>
 
-<div class="modalbg" id="modalbg2">
-    <div class="modal_window" id="modalWindow2">
-        <img src="./img/close.png" alt="" class="close_btn" id="close_btn2">
-        <h1 class="m_title">Ученикам:</h1>
-        <div class="m_content">
-            <div class="m_right">
-                <a href="#" class="m_u_link">ЭПОС</a>
-            </div>
-            <div class="m_left">
-                <a href="#" class="m_u_link">Расписание</a>
+<div id="moadlbg-2" class="modalbg">
+    <div class="modalw">
+        <div class="m_header">
+            <div class="m_t_box">
+                <h1 class="m_title">Родителям</h1>
+                <div class="blueline"></div>
 
             </div>
+
+            <img src="./img/close.png" alt="" onclick="closeMoadl(2)" class="closem">
+        </div>
+        <div class="m_cont" id="pare_cont">
+
         </div>
     </div>
 </div>
-
 <!--moadl-->
 <header>
 
@@ -132,15 +133,13 @@
 
     <div id="carouselExampleInterval" class="carousel slide back" data-bs-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item active"  id="container1" data-bs-interval="10000">
+            <div class="carousel-item active" id="container1" data-bs-interval="10000">
                 <img id="cc1_img" src="./img/WLEJmAeugbw%201.png" class="d-block" alt="...">
                 <div class="c_display">
                     <div class="c_title_box">
                         <h1 id="cc1_title" class="c_title2">В школе прошёл “Хакатон по информатике”</h1>
                     </div>
                 </div>
-
-
             </div>
             <div class="carousel-item" id="container2" data-bs-interval="2000">
                 <img id="cc2_img" src="./img/4rRA_bgoAeE.jpg" class="d-block" alt="...">
@@ -168,6 +167,15 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></script>
+
+    <script>
+        var myCarousel = new bootstrap.Carousel(document.getElementById('carouselExampleInterval'), {
+            interval: 3000,  // Время автоматического перелистывания в миллисекундах
+            wrap: true       // Позволяет карусели зацикливаться
+        });
+    </script>
+
 
 
 
@@ -181,7 +189,7 @@
         </div>
 
     </div>
-    <div onclick="toggleModal()" class="card2">
+    <div onclick="studentsmodal()" class="card2">
         <div class="c2">
             <h1 class="c_title">Ученикам</h1>
             <div class="c_line"></div>
@@ -189,7 +197,7 @@
         </div>
 
     </div>
-    <div onclick="toggleModal2()" class="card3">
+    <div onclick="parentsmodal()" class="card3">
         <div class="c2">
             <h1 class="c_title">Родителям</h1>
             <div class="c_line"></div>
@@ -202,10 +210,7 @@
 <foote>
     <iframe src="./elements/footer/news.html" width="100%"  frameborder="0"></iframe>
 </foote>
-<script>
-
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
+<script src="https://yastatic.net/browser-updater/v1/script.js" charset="utf-8"></script>
+<script>var yaBrowserUpdater = new ya.browserUpdater.init({"lang":"ru","browsers":{"yabrowser":"16.12","chrome":"62","ie":"11","opera":"49","safari":"12","fx":"67","iron":"35","flock":"Infinity","palemoon":"25","camino":"Infinity","maxthon":"4.5","seamonkey":"2.3"},"theme":"blue"});</script>
 </body>
 </html>

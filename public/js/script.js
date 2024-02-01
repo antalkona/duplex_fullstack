@@ -169,62 +169,118 @@ function rasp(){
 
     location.replace(href)
 }
-function toggleModal() {
-    const animatedElement = document.querySelector('.modal_window');
-    console.log('clck');
-    const modal = document.getElementById('modalbg');
-    modal.style.display = 'flex';
-    modal.classList.toggle('modal-visible');
-    animate();
+function studentsmodal(){
+    const modalBg = document.getElementById('moadlbg-1');
+    modalBg.style.display = 'flex'
 
-    function animate() {
-        // Добавляем класс для запуска анимации
-        animatedElement.classList.add('animate-slide');
-    }
 
-    const butcl = document.getElementById('close_btn');
-    butcl.onclick = function () {
-        animate();
-        function animate() {
-            // Добавляем класс для запуска анимации закрытия
-            animatedElement.classList.add('unanimate-slide');
-        }
-        modal.classList.toggle('modal-visible');
-        setTimeout(() => {
 
-            modal.style.display = 'none';
-            // Убираем класс анимации закрытия
-            animatedElement.classList.remove('unanimate-slide');
-        }, 300); // Укажите тот же период, что и в анимации закрытия
-    };
+    fetch('/students', {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+    })
+        .then(response => response.json())
+        .then(data => {
+            datai = data;  // Assigning the fetched data to datai
+            datai.sort((a, b) => {
+                const priorityA = parseInt(a.priority) || 0;
+                const priorityB = parseInt(b.priority) || 0;
+
+                return priorityA - priorityB;
+            });
+            const mainContainer = document.getElementById('stud_cont');
+
+            console.log(datai);
+            console.log(datai.length)
+            const cont = document.getElementById('m_')
+            for (let i = 0; i < datai.length; i++) {
+                // Ваш код, который нужно выполнить для каждого элемента массива
+                let lesObj = datai[i].id
+                let priObj = datai[i].priority
+                let txtObj = datai[i].text
+                let linObj = datai[i].link
+                const div = document.createElement('div');
+                div.className = 'objl';
+                div.id = `div-${lesObj}`;
+                div.innerHTML = `
+                                <a href="${linObj}" class="mod_link">${txtObj}</a>
+               
+            `;
+                mainContainer.appendChild(div);}
+        })
+        .catch(error => {
+            console.error('Error:', error);});
+
+}
+function parentsmodal(){
+    const modalBg = document.getElementById('moadlbg-2');
+    modalBg.style.display = 'flex'
+
+
+
+    fetch('/parents', {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+    })
+        .then(response => response.json())
+        .then(data => {
+            datai = data;  // Assigning the fetched data to datai
+            datai.sort((a, b) => {
+                const priorityA = parseInt(a.priority) || 0;
+                const priorityB = parseInt(b.priority) || 0;
+
+                return priorityA - priorityB;
+            });
+            const mainContainer = document.getElementById('pare_cont');
+
+            console.log(datai);
+            console.log(datai.length)
+            const cont = document.getElementById('m_')
+            for (let i = 0; i < datai.length; i++) {
+                // Ваш код, который нужно выполнить для каждого элемента массива
+                let lesObj = datai[i].id
+                let priObj = datai[i].priority
+                let txtObj = datai[i].text
+                let linObj = datai[i].link
+                const div = document.createElement('div');
+                div.className = 'objl';
+                div.id = `div-${lesObj}`;
+                div.innerHTML = `
+                                <a href="${linObj}" class="mod_link">${txtObj}</a>
+               
+            `;
+                mainContainer.appendChild(div);}
+        })
+        .catch(error => {
+            console.error('Error:', error);});
+
 }
 
-function toggleModal2() {
-    const animatedElement = document.querySelector('.modal_window2');
-    console.log('clck');
-    const modal = document.getElementById('modalbg2');
-    modal.style.display = 'flex';
-    modal.classList.toggle('modal-visible');
-    animate();
+function closeMoadl(id){
+    const modalBg = document.getElementById(`moadlbg-${id}`);
+    modalBg.style.display = 'none'
+    if (modalBg) {
+        modalBg.innerHTML = ''; // Очищаем содержимое div
+        modalBg.innerHTML = `<div class="modalw">
+        <div class="m_header">
+            <div class="m_t_box">
+                <h1 class="m_title">Ученикам</h1>
+                <div class="blueline"></div>
 
-    function animate() {
-        // Добавляем класс для запуска анимации
-        animatedElement.classList.add('animate-slide');
+            </div>
+
+            <img src="./img/close.png" alt="" onclick="closeMoadl(1)" class="closem">
+        </div>
+        <div class="m_cont" id="stud_cont">
+
+        </div>
+    </div>` ; // Очищаем содержимое div
+
     }
-
-    const butcl = document.getElementById('close_btn2');
-    butcl.onclick = function () {
-        animate();
-        function animate() {
-            // Добавляем класс для запуска анимации закрытия
-            animatedElement.classList.add('unanimate-slide');
-        }
-        modal.classList.toggle('modal-visible');
-        setTimeout(() => {
-
-            modal.style.display = 'none';
-            // Убираем класс анимации закрытия
-            animatedElement.classList.remove('unanimate-slide');
-        }, 300); // Укажите тот же период, что и в анимации закрытия
-    };
 }

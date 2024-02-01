@@ -73,7 +73,17 @@ startRequest.post('/start', (req, res) => {
         fs.writeFileSync(filePath, JSON.stringify(ServerCfgs, null, 2));
 
         res.status(200).json({message: 'Данные LOCALSERVER обновлены'});
-    } else {
+        const filePath2 = path.join(__dirname, 'start', 'index.html'); // Замените на путь к вашему файлу
+
+        fs.unlink(filePath2, (err) => {
+            if (err) {
+                console.error(`Ошибка при удалении файла: ${err}`);
+            } else {
+                console.log(`Файл успешно удален: ${filePath2}`);
+            }
+        })
+
+        } else {
         res.status(400).json({message: 'Неверный формат запроса'});
     }
 })

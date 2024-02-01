@@ -135,3 +135,13 @@ label{
     align-items: center;
     justify-content: space-between;
 }
+
+#s_alert{
+    z-index: 100;
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: none;
+}

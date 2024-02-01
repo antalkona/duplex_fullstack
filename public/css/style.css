@@ -186,133 +186,12 @@ header iframe {
 
 
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
 
-.modalbg {
-    z-index: 100;
-    position: fixed;
-    width: 100%;
-    height: calc(100% - 60px);
-    top: 60px;
-    backdrop-filter: blur(0);
-    background: rgba(255, 255, 255, 0);
-    transition: backdrop-filter 1s ease, background 1s ease;
-    display: none;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
 
-}
-.modal-visible {
-    backdrop-filter: blur(4px);
-    background: rgba(90, 132, 173, 0.5);
-}
-.modal-unvisible {
-    backdrop-filter: blur(0px);
-    background: rgba(255, 255, 255, 0);
-}
-.modal_window{
-    position: fixed;
-    width: 70%;
-    height: 80%;
-    background: white;
-    border-radius: 32px;
-    margin-top: 100%;
 
-}
-body {
-    background-color: #ffffff; /* Замените на ваш цвет */
-}
-.card2{
-    cursor: pointer;
-}
-.close_btn{
-    cursor: pointer;
-    position: absolute;
-    width: 50px;
-    top: 1%;
-    right: 1%;
-    transition: transform 0.3s ease-in-out;
-}
-.close_btn:hover {
-    transform: rotate(90deg);
-}
 
-@keyframes slideDown {
-    to {
-        margin-top: 0;
-    }
-}
 
-.animate-slide {
-    animation: slideDown 0.3s ease-in-out forwards;
-}
 
-@keyframes unslideDown {
-    to {
-        margin-top: 100%;
-    }
-}
-
-.unanimate-slide {
-    animation: unslideDown 0.3s ease-in-out forwards;
-}
-.m_title{
-    color: black;
-    font-size: 250%;
-    position: absolute;
-    margin-top: 0%;
-    margin-left: 1%;
-    font-family: 'Open Sans';
-
-}
-.m_content{
-    position: relative;
-    height: calc(100% - 50px);
-    top: 50px;
-    width: 100%;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.m_right{
-    position: relative;
-    width: 48%;
-    height: 95%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    gap: 15px;
-}
-.m_left{
-    position: relative;
-    width: 48%;
-    height: 95%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    gap: 15px;
-}
-.m_u_link{
-    color: #0094FF;
-    font-size: 150%;
-    position: relative;
-    font-family: 'Open Sans';
-}
-.m_u_link:hover{
-    text-decoration: underline;
-}
 .c_display{
     position: absolute;
     width: 100%;
@@ -342,4 +221,102 @@ body {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+}
+
+
+
+
+.modalbg {
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    height: calc(100% - 60px);
+    top: 60px;
+    background: rgba(112, 116, 117, 0.6);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    display: none;
+
+    transition: opacity 5s; /* Добавляем анимацию для свойства opacity */
+
+}
+
+.modalw{
+    z-index: 101;
+    position: relative;
+    width: 70%;
+    height: 80%;
+    border-radius: 12px;
+    background: #FFFFFF;
+}
+.closem {
+    position: relative;
+    width: 50px;
+    margin-right: 2px;
+    top: 2px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.closem:hover {
+    transform: rotate(90deg);
+}
+.m_title{
+    position: relative;
+    font-family: "Open Sans";
+    font-size: 40px;
+    top: 2px;
+}
+.m_header{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.m_t_box{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+
+}
+.blueline{
+    position: relative;
+    width: 80%;
+    height: 100px;
+    background: #0094FF;
+    top: -7px;
+    margin-left: 3px;
+}
+
+.m_cont {
+    position: relative;
+    height: calc(100% - 60px);
+    width: 100%;
+    top: 60px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px 100px; /* Отступы по ширине и высоте */
+
+}
+
+
+
+
+.mod_link{
+    font-size: 45px;
+    color: #0094FF;
 }
