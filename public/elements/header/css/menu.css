@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,800&display=swap');
 .mnav{
-    position: relative;
     z-index: 100;
     position: fixed;
     width: 100%;
@@ -13,6 +12,7 @@
     align-items: center;
     justify-content: start;
     display: none;
+    overflow-y: auto;
 }
 .topline{
     position: absolute;
@@ -36,29 +36,48 @@
     flex-direction: row;
     align-items: center;
     justify-content: start;
-    padding-left: 11%;
+}
+
+.h_men{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-left: 5%;
 }
 .n_title{
+    position: relative;
     font-family: 'Open Sans', sans-serif;
-    color: #0094FF;
+
+    font-weight: 800;
+    font-size: 350%;
+    color: black;
+}
+.m_line{
+    position: absolute;
+    height: 3px;
+    width: 90%;
+    bottom: 0px;
+    background: #0094FF;
+    margin-left: 5%;
 }
 .n_main{
     position: relative;
-    width: 80%;
-    height: 100px;
+    width: 100%;
+    padding-left: 5%;
+    max-height: 100%;
+    overflow-y: scroll;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: start;
-    flex-wrap: wrap;
-    padding-left: 3%;
     justify-content: start;
     gap: 15px;
-
 }
 .n_pageCard {
+
     cursor: pointer;
-    position: relative;
     width: 100%;
     padding-right: 15%;
     display: flex;
@@ -79,7 +98,7 @@
     position: relative;
     color: black;
     top: 5%;
-    font-size: 170%;
+    font-size: 300%;
     display: inline-block;
     transform-origin: left center;
     font-family: Inter;

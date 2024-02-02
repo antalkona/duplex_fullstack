@@ -19,7 +19,7 @@ function navigatorModal() {
     const menub = document.getElementById('menub');
     menub.src = '../img/blue.png';
     menub.setAttribute('onclick', 'm_close()');
-    menub.style.scale = '1.2'
+    menub.style.transform = 'scale(1.2)';
     fetch('/navigator', {
         method: 'POST',
         headers: {
@@ -47,10 +47,10 @@ function navigatorModal() {
                 let linObj = datai[i].link;
 
                 const div = document.createElement('div');
-                div.className = 'objl';
+                div.className = 'n_pageCard';
                 div.id = `div-${lesObj}`;
                 div.innerHTML = `<div class="n_pageCard">
-                <h1 class="n_pageTitle" onclick="window.location.href='${lesObj}'">${txtObj}</h1>
+                <h1 class="n_pageTitle" onclick="window.location.href='${linObj}'">${txtObj}</h1>
                 <img class="arrow" src="https://dev-z01.zentas.tech/img/Arrow%2010.png">
             </div>`;
 

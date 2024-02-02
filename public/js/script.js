@@ -284,3 +284,25 @@ function closeMoadl(id){
 
     }
 }
+function closeMoadl2(id){
+    const modalBg = document.getElementById(`moadlbg-${id}`);
+    modalBg.style.display = 'none'
+    if (modalBg) {
+        modalBg.innerHTML = ''; // Очищаем содержимое div
+        modalBg.innerHTML = `<div class="modalw">
+        <div class="m_header">
+            <div class="m_t_box">
+                <h1 class="m_title">Родителям</h1>
+                <div class="blueline"></div>
+
+            </div>
+
+            <img src="./img/close.png" alt="" onclick="closeMoadl2(2)" class="closem">
+        </div>
+        <div class="m_cont" id="pare_cont">
+
+        </div>
+    </div>` ; // Очищаем содержимое div
+
+    }
+}
