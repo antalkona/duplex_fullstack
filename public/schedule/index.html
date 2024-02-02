@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
     <link rel="stylesheet" href="../elements/header/css/style.css">
+
 
     <title>Расписание</title>
     <link rel="icon" id="icon" href="#">
@@ -30,13 +30,31 @@
 
 </head>
 <body>
-<header>
-    <div class="main_head">
-        <script src="https://lidrekon.ru/slep/js/jquery.js"></script>
-        <script src="https://lidrekon.ru/slep/js/uhpv-full.min.js"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
 
-        <img src="../elements/header/img/Group%20233.png" alt="" class="h_logo">
+
+<div id="mnav" class="mnav">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./elements/header/css/style.css">
+    <link rel="stylesheet" href="https://dev-z01.zentas.tech/elements/header/css/menu.css">
+
+    <div class="topline"></div>
+    <div class="headerm">
+        <h1 class="n_title">Меню</h1>
+    </div>
+    <div id="n_main" class="n_main">
+
+
+    </div>
+    <script src="https://dev-z01.zentas.tech/elements/header/modal.js"></script>
+</div>
+<header>
+
+    <div class="main_head">
+
+        <img src="https://dev-z01.zentas.tech/elements/header/img/Group%20233.png" alt="" class="h_logo">
         <div class="h_pages">
             <button class="h_main" onclick="open_header('')">Главная</button>
             <button class="h_main" onclick="open_header('school')">Школа</button>
@@ -44,10 +62,10 @@
             <button class="h_main" onclick="open_header('schedule')" >Расписание</button>
         </div>
         <div class="h_iconnaw">
-            <img data-bs-toggle="tooltip" data-bs-title="подсказок по умолчанию" title="Контакты" src="../elements/header/img/mail%201.png" alt="" class="h_inaw">
-            <img id="specialButton" style="cursor:pointer;" title="Версия для слабовидящих" src="../elements/header/img/view%201.png" alt="" class="h_inaw">
-            <img title="Поиск по сайту" src="../elements/header/img/search%201.png" alt="" class="h_inaw">
-            <img title="Меню" src="../elements/header/img/menu%201.png" alt="" class="h_inaw">
+            <img data-bs-toggle="tooltip" data-bs-title="подсказок по умолчанию" title="Контакты" src="https://dev-z01.zentas.tech/elements/header/img/mail%201.png" alt="" class="h_inaw">
+            <img id="specialButton" style="cursor:pointer;" title="Версия для слабовидящих" src="https://dev-z01.zentas.tech/elements/header/img/view%201.png" alt="" class="h_inaw">
+            <img title="Поиск по сайту" src="https://dev-z01.zentas.tech/elements/header/img/search%201.png" alt="" class="h_inaw">
+            <img title="Меню" onclick="navigatorModal()" src="https://dev-z01.zentas.tech/elements/header/img/menu%201.png" id="menub" alt="" class="h_inaw h_meny">
             <script>
                 const herd = location.origin
                 function open_header(text){
@@ -56,6 +74,7 @@
                 }
             </script>
         </div>
+        <h1 class="test">test</h1>
     </div>
 </header>
 <main>

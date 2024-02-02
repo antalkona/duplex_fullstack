@@ -90,6 +90,23 @@ mainPage.post('/admin/mainpage/students', (req, res) => {
     fs.writeFileSync(parentsFilePath, JSON.stringify(currentData, null, 2), 'utf8'); // Запись обновленных данных обратно в файл
     res.status(200).json({ message: 'SERVER RESPONSE - OK, STATUS-CODE - 200' }); // Отправка успешного ответа клиенту
 });
+mainPage.post('/admin/mainpage/navigator', (req, res) => {
+    // Определение путей к папке и файлу
+    const pagesFolderPath = path.join(__dirname, 'public', 'assets');
+    const parentsFilePath = path.join(pagesFolderPath, 'navigator.json');
+
+    // Создание объекта с новыми данными
+    const newLink = {
+        id: req.body.id,
+        text: req.body.text,
+        link: req.body.link,
+        priority: req.body.priority,
+    };
+    const currentData = JSON.parse(fs.readFileSync(parentsFilePath, 'utf8')) || [];    // Чтение текущих данных из файла или использование пустого массива, если чтение не удалось
+    currentData.push(newLink); // Добавление новых данных
+    fs.writeFileSync(parentsFilePath, JSON.stringify(currentData, null, 2), 'utf8'); // Запись обновленных данных обратно в файл
+    res.status(200).json({ message: 'SERVER RESPONSE - OK, STATUS-CODE - 200' }); // Отправка успешного ответа клиенту
+});
 
 mainPage.post('/parents', (req, res) => {
     const caruselPath = path.join(__dirname, 'public', 'assets', 'parents.json')
@@ -104,6 +121,17 @@ mainPage.post('/parents', (req, res) => {
 })
 mainPage.post('/students', (req, res) => {
     const caruselPath = path.join(__dirname, 'public', 'assets', 'students.json')
+    fs.readFile(caruselPath, 'utf8', (err, data) => {
+        if (err) {
+            res.status(500).send('Ошибка чтения файла данных.');
+        } else {
+            const filesData = JSON.parse(data);
+            res.json(filesData);
+        }
+    });
+})
+mainPage.post('/navigator', (req, res) => {
+    const caruselPath = path.join(__dirname, 'public', 'assets', 'navigator.json')
     fs.readFile(caruselPath, 'utf8', (err, data) => {
         if (err) {
             res.status(500).send('Ошибка чтения файла данных.');
@@ -221,6 +249,63 @@ mainPage.post('/admin/mainpage/parents/del', (req, res) => {
                 });
             } else {
                 return res.status(404).json({message: "Студент с указанным id не найден"});
+            }
+
+        })
+    }
+
+});
+mainPage.post('/admin/mainpage/navigator/del', (req, res) => {
+    if (req.body && req.body.del) {
+        const caruselPath = path.join(__dirname, 'public', 'assets', 'navigator.json');
+
+        // Чтение данных из файла
+        fs.readFile(caruselPath, 'utf8', (err, data) => {
+            if (err) return res.status(500).json({ message: "Ошибка при чтении файла" });
+
+            // Попытка парсинга JSON и удаление объекта с указанным id
+            const students = JSON.parse(data || '[]');
+            const index = students.findIndex(student => student.id === req.body.del);
+            if (index !== -1) students.splice(index, 1);
+
+            // Запись изменений обратно в файл
+            fs.writeFile(caruselPath, JSON.stringify(students, null, 2), 'utf8', (err) => {
+                if (err) return res.status(500).json({ message: "Ошибка при записи файла" });
+
+                return res.json({ message: "Успешно" });
+            });
+        });
+
+    }
+
+    if (req.body && req.body.edit && req.body.edit.id) {
+        const caruselPath = path.join(__dirname, 'public', 'assets', 'navigator.json');
+
+        // Чтение данных из файла
+        fs.readFile(caruselPath, 'utf8', (err, data) => {
+            if (err) return res.status(500).json({message: "Ошибка при чтении файла"});
+
+            // Попытка парсинга JSON и поиск объекта с указанным id
+            const students = JSON.parse(data || '[]');
+            const index = students.findIndex(student => student.id === req.body.edit.id);
+
+            if (index !== -1) {
+                // Замена значений в объекте по указанному id
+                students[index] = {
+                    id: req.body.edit.id,
+                    priority: req.body.edit.priority,
+                    text: req.body.edit.text,
+                    link: req.body.edit.link
+                };
+
+                // Запись изменений обратно в файл
+                fs.writeFile(caruselPath, JSON.stringify(students, null, 2), 'utf8', (err) => {
+                    if (err) return res.status(500).json({message: "Ошибка при записи файла"});
+
+                    return res.json({message: "Успешно"});
+                });
+            } else {
+                return res.status(404).json({message: "Навигатор с указанным id не найден"});
             }
 
         })

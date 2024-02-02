@@ -23,9 +23,9 @@
         <h1 class="mod_title">Ученикам ред <button type="button" onclick="closeModal()" class="btn btn-warning">Close</button>
         </h1>
         <div class="objl disobj">
-            <p>ID</p>
-            <p>TEXT</p>
             <p>Priority</p>
+            <p>TEXT</p>
+            <p>Link</p>
             <p>Buttons</p>
 
 
@@ -38,9 +38,23 @@
         <h1 class="mod_title">Ученикам ред <button type="button" onclick="closeModal2()" class="btn btn-warning">Close</button>
         </h1>
         <div class="objl disobj">
-            <p>ID</p>
-            <p>TEXT</p>
             <p>Priority</p>
+            <p>TEXT</p>
+            <p>Link</p>
+            <p>Buttons</p>
+
+
+        </div>
+    </div>
+</div>
+<div id="modal3" style="cursor: pointer" class="modal">
+    <div id="container3" style="cursor: default" class="window">
+        <h1 class="mod_title">Ученикам ред <button type="button" onclick="closeModal3()" class="btn btn-warning">Close</button>
+        </h1>
+        <div class="objl disobj">
+            <p>Priority</p>
+            <p>TEXT</p>
+            <p>Link</p>
             <p>Buttons</p>
 
 
@@ -116,6 +130,16 @@
             <input type="text" class="form-control form-control-sm" id="p_prior" placeholder="Приоритет">
             <button onclick="parents()" id="send_s" type="button" class="btn btn-primary">Send</button>
             <button onclick="parentsEdit()" id="send_cc3" type="button" class="btn btn-success">Edit</button>
+
+        </div>
+        <label for="floatingInput">Навигатор доб</label>
+        <div class="i_place">
+
+            <input type="text" class="form-control form-control-sm" id="n_title" placeholder="Название">
+            <input type="text" class="form-control form-control-sm" id="n_link" placeholder="Ссылка">
+            <input type="text" class="form-control form-control-sm" id="n_prior" placeholder="Приоритет">
+            <button onclick="navigator1()" id="send_n" type="button" class="btn btn-primary">Send</button>
+            <button onclick="navigatorEdit()" id="send_cc3" type="button" class="btn btn-success">Edit</button>
 
         </div>
     </div>

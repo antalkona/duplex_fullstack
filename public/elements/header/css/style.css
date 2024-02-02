@@ -48,7 +48,7 @@
 }
 .h_main{
     color: #000;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     font-style: normal;
     font-weight: 600;
@@ -63,14 +63,20 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    font-family: 'Open Sans', sans-serif;
     justify-content: space-around;
     align-items: center;
     gap: 10px;
     text-decoration: none; /* no underline */
 }
 
-.h_inaw{
-    cursor: pointer;
-    color: black;
+.h_meny:hover{
+    content: url("./blue.png");
 }
 
+.h_inaw{
+    cursor: pointer;
+}
+.h_meny{
+    transition: transform 0.2s;
+}

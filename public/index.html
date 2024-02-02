@@ -16,8 +16,7 @@
     <script src="https://lidrekon.ru/slep/js/jquery.js"></script>
     <script src="https://lidrekon.ru/slep/js/uhpv-full.min.js"></script>
 
-    <title>МАОУ Предметно-языковая школа "Дуплекс"</title>
-
+    <title>МАОУ Предметно-языковая школа "Дуплекс"</title
     <link rel="icon" id="icon" href="#">
     <script>
         // Функция для получения иконки и установки пути к ней
@@ -73,12 +72,25 @@
         </div>
     </div>
 </div>
+
+<div id="mnav" class="mnav">
+    <link rel="stylesheet" href="https://dev-z01.zentas.tech/elements/header/css/menu.css">
+
+    <div class="topline"></div>
+    <div class="headerm">
+        <h1 class="n_title">Меню</h1>
+    </div>
+    <div id="n_main" class="n_main">
+
+
+    </div>
+    <script src="https://dev-z01.zentas.tech/elements/header/modal.js"></script>
+</div>
 <header>
 
     <div class="main_head">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
 
-        <img src="./elements/header/img/Group%20233.png" alt="" class="h_logo">
+        <img src="https://dev-z01.zentas.tech/elements/header/img/Group%20233.png" alt="" class="h_logo">
         <div class="h_pages">
             <button class="h_main" onclick="open_header('')">Главная</button>
             <button class="h_main" onclick="open_header('school')">Школа</button>
@@ -86,10 +98,10 @@
             <button class="h_main" onclick="open_header('schedule')" >Расписание</button>
         </div>
         <div class="h_iconnaw">
-            <img data-bs-toggle="tooltip" data-bs-title="подсказок по умолчанию" title="Контакты" src="./elements/header/img/mail%201.png" alt="" class="h_inaw">
-            <img id="specialButton" style="cursor:pointer;" title="Версия для слабовидящих" src="./elements/header/img/view%201.png" alt="" class="h_inaw">
-            <img title="Поиск по сайту" src="./elements/header/img/search%201.png" alt="" class="h_inaw">
-            <img title="Меню" src="./elements/header/img/menu%201.png" alt="" class="h_inaw">
+            <img data-bs-toggle="tooltip" data-bs-title="подсказок по умолчанию" title="Контакты" src="https://dev-z01.zentas.tech/elements/header/img/mail%201.png" alt="" class="h_inaw">
+            <img id="specialButton" style="cursor:pointer;" title="Версия для слабовидящих" src="https://dev-z01.zentas.tech/elements/header/img/view%201.png" alt="" class="h_inaw">
+            <img title="Поиск по сайту" src="https://dev-z01.zentas.tech/elements/header/img/search%201.png" alt="" class="h_inaw">
+            <img title="Меню" onclick="navigatorModal()" src="https://dev-z01.zentas.tech/elements/header/img/menu%201.png" id="menub" alt="" class="h_inaw h_meny">
             <script>
                 const herd = location.origin
                 function open_header(text){
