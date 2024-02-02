@@ -1879,5 +1879,14 @@
     "url": "http://localhost:3000/",
     "time": "01.02.2024/15:09",
     "ip": "::1"
+  },
+  {
+    "code": "wmvPwgTgv33EGwDH",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "02.02.2024/13:25",
+    "ip": "::1"
   }
 ]
