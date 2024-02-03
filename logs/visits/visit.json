@@ -6028,5 +6028,734 @@
     "url": "http://localhost:3000/",
     "time": "02.02.2024/23:09",
     "ip": "::1"
+  },
+  {
+    "code": "J2wUiDAA2wHS6WAk",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "03.02.2024/14:47",
+    "ip": "::1"
+  },
+  {
+    "code": "ybWuyN1fcyIwkrKk",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "03.02.2024/14:51",
+    "ip": "::1"
+  },
+  {
+    "code": "MXa0uwICrzV1N1jr",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "03.02.2024/14:52",
+    "ip": "::1"
+  },
+  {
+    "code": "L6jp06j9iOG46Hdk",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "03.02.2024/14:59",
+    "ip": "::1"
+  },
+  {
+    "code": "T1w7u1OpkDYWFqD3",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "03.02.2024/15:00",
+    "ip": "::1"
+  },
+  {
+    "code": "ywy6wcQ7kSgSJEJt",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "03.02.2024/15:00",
+    "ip": "::1"
+  },
+  {
+    "code": "QIMfMa2hj3KISfoE",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "03.02.2024/15:01",
+    "ip": "::1"
+  },
+  {
+    "code": "5lSyUHhnuNQM1uuW",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "03.02.2024/15:01",
+    "ip": "::1"
+  },
+  {
+    "code": "otp9G3Bfr5mgmYxg",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "03.02.2024/15:01",
+    "ip": "::1"
+  },
+  {
+    "code": "nufq58vV5WUcV7uj",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "03.02.2024/15:05",
+    "ip": "::1"
+  },
+  {
+    "code": "RUMbR0QpPmJileQs",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "03.02.2024/15:06",
+    "ip": "::1"
+  },
+  {
+    "code": "W2gH6LqexAkApd57",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "03.02.2024/15:07",
+    "ip": "::1"
+  },
+  {
+    "code": "71dymLUHEphXmsfv",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "03.02.2024/15:09",
+    "ip": "::1"
+  },
+  {
+    "code": "3VH3THMZzOl55jzv",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "03.02.2024/15:10",
+    "ip": "::1"
+  },
+  {
+    "code": "QcymPbBTrT3OlI8w",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "03.02.2024/15:11",
+    "ip": "::1"
+  },
+  {
+    "code": "eQ7i31hFGUG3kiOZ",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "03.02.2024/15:11",
+    "ip": "::1"
+  },
+  {
+    "code": "Z9vjYgIUcN85SYpM",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "03.02.2024/15:12",
+    "ip": "::1"
+  },
+  {
+    "code": "6ORHxSLWZhtXIfGv",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "03.02.2024/15:14",
+    "ip": "::1"
+  },
+  {
+    "code": "3FRZkN7zMCvkwBJr",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "03.02.2024/15:14",
+    "ip": "::1"
+  },
+  {
+    "code": "PDcHKr9NzVQeaTVs",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "03.02.2024/15:18",
+    "ip": "::1"
+  },
+  {
+    "code": "1cDJ0QIfXdKzT7KF",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "03.02.2024/15:41",
+    "ip": "::1"
+  },
+  {
+    "code": "YGKjUdf31Lge11BZ",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "03.02.2024/15:58",
+    "ip": "::1"
+  },
+  {
+    "code": "uwrzo8R8z3wkgBv9",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "03.02.2024/15:59",
+    "ip": "::1"
+  },
+  {
+    "code": "VqOEXcsMjco1FfPE",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "03.02.2024/16:00",
+    "ip": "::1"
+  },
+  {
+    "code": "MtAKu3e8uc4Mqc7e",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "03.02.2024/16:01",
+    "ip": "::1"
+  },
+  {
+    "code": "r7Sp0FnsPVopZJXb",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "03.02.2024/16:01",
+    "ip": "::1"
+  },
+  {
+    "code": "sRLY1lqyRE4qKTvu",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "03.02.2024/16:03",
+    "ip": "::1"
+  },
+  {
+    "code": "6TRptuZXNb7SqSXu",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "03.02.2024/16:03",
+    "ip": "::1"
+  },
+  {
+    "code": "laFlEZxdDeW69y35",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "03.02.2024/16:12",
+    "ip": "::1"
+  },
+  {
+    "code": "jX3DGN1Jnj68ODfL",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:08",
+    "ip": "::1"
+  },
+  {
+    "code": "8qspnWde9vDfQhyx",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:09",
+    "ip": "::1"
+  },
+  {
+    "code": "CUqBDqagvDAUPvFB",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:10",
+    "ip": "::1"
+  },
+  {
+    "code": "lWwGVOgW62Hocssy",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:11",
+    "ip": "::1"
+  },
+  {
+    "code": "o8Lm0afJGxDgub3Z",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:11",
+    "ip": "::1"
+  },
+  {
+    "code": "WxP3R3xTRgwjJ1wj",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:12",
+    "ip": "::1"
+  },
+  {
+    "code": "EPct7iwzY7jVVBhT",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:12",
+    "ip": "::1"
+  },
+  {
+    "code": "0MlCFw5dcSsnItSN",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:12",
+    "ip": "::1"
+  },
+  {
+    "code": "GhC3kRhAgHsrJ4nq",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:14",
+    "ip": "::1"
+  },
+  {
+    "code": "6WIh8DOe5QQf1opz",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:15",
+    "ip": "::1"
+  },
+  {
+    "code": "VgECl3kXFbp7aU35",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:15",
+    "ip": "::1"
+  },
+  {
+    "code": "929ddvdvPvtGw3jF",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:16",
+    "ip": "::1"
+  },
+  {
+    "code": "g8OljT8e3dgupLTA",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:17",
+    "ip": "::1"
+  },
+  {
+    "code": "UbMtPDM8Ih4jaEP4",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:17",
+    "ip": "::1"
+  },
+  {
+    "code": "MxV3wHnjTjZFBPLW",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:19",
+    "ip": "::1"
+  },
+  {
+    "code": "bMYwIwRkbZvYqE2Y",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:20",
+    "ip": "::1"
+  },
+  {
+    "code": "xsBVCbZvuNDWzKmC",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:21",
+    "ip": "::1"
+  },
+  {
+    "code": "YMqJUph6sxqA9x4V",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:21",
+    "ip": "::1"
+  },
+  {
+    "code": "Vun1FbpjNOoqnsLL",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:22",
+    "ip": "::1"
+  },
+  {
+    "code": "2JfVnzOsofkQG0LY",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:23",
+    "ip": "::1"
+  },
+  {
+    "code": "UB4Xj9gaS9sGkSa7",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:23",
+    "ip": "::1"
+  },
+  {
+    "code": "ulldmqR6yfdkf2MQ",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:26",
+    "ip": "::1"
+  },
+  {
+    "code": "LsuKAekvN6tVyXdp",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:26",
+    "ip": "::1"
+  },
+  {
+    "code": "gZP73d3jCKD2KzbD",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:29",
+    "ip": "::1"
+  },
+  {
+    "code": "NbjHEXmwPD8eJyMF",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:30",
+    "ip": "::1"
+  },
+  {
+    "code": "BNWn4y0R0dpX2Szx",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:30",
+    "ip": "::1"
+  },
+  {
+    "code": "a5rnvNXFaxiV2sWC",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:30",
+    "ip": "::1"
+  },
+  {
+    "code": "fsueKm4qKPRHggOA",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:31",
+    "ip": "::1"
+  },
+  {
+    "code": "AKyVo3K7fSg6PXdS",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:32",
+    "ip": "::1"
+  },
+  {
+    "code": "bJDX1xxIJlPCKLWY",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:32",
+    "ip": "::1"
+  },
+  {
+    "code": "NAafqrvbwGu6QP7x",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:32",
+    "ip": "::1"
+  },
+  {
+    "code": "rJ7ExowLAUlWL2XU",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:33",
+    "ip": "::1"
+  },
+  {
+    "code": "cs6VOopCvrLS1i5e",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:33",
+    "ip": "::1"
+  },
+  {
+    "code": "zQiYBmPMgEKGltA7",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:33",
+    "ip": "::1"
+  },
+  {
+    "code": "iThrSkGOBVIi4Zih",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:33",
+    "ip": "::1"
+  },
+  {
+    "code": "cRwe44zMfCpTeW4U",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:33",
+    "ip": "::1"
+  },
+  {
+    "code": "c7ReQeTbbFEcLOcd",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:34",
+    "ip": "::1"
+  },
+  {
+    "code": "g6vV3Yn559rMJh00",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:34",
+    "ip": "::1"
+  },
+  {
+    "code": "qaAeDZLyQtRVdx3L",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:34",
+    "ip": "::1"
+  },
+  {
+    "code": "in4c3x4ZFETSjwPD",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:34",
+    "ip": "::1"
+  },
+  {
+    "code": "pQq9UC0MkTk4lcGJ",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:36",
+    "ip": "::1"
+  },
+  {
+    "code": "IQ6DEM4Jn5IodSHy",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:37",
+    "ip": "::1"
+  },
+  {
+    "code": "06cPGRD0oa2Gau0W",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:37",
+    "ip": "::1"
+  },
+  {
+    "code": "EGX2gI8aTwH6Jasp",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:37",
+    "ip": "::1"
+  },
+  {
+    "code": "IXlgFcODMEWDbp5z",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:37",
+    "ip": "::1"
+  },
+  {
+    "code": "Fmu7YD1VvyMQlGjm",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:37",
+    "ip": "::1"
+  },
+  {
+    "code": "3YKkT2242KcbeKwk",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:38",
+    "ip": "::1"
+  },
+  {
+    "code": "X5RmF2lgrux2ClkX",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:40",
+    "ip": "::1"
+  },
+  {
+    "code": "0BroDsvqWtqMMhU0",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:41",
+    "ip": "::1"
+  },
+  {
+    "code": "231IccX5GiBRIzay",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:44",
+    "ip": "::1"
+  },
+  {
+    "code": "lbh8BnJO1fryKvJz",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:45",
+    "ip": "::1"
+  },
+  {
+    "code": "JAxDBV1F95prxv7v",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "04.02.2024/00:45",
+    "ip": "::1"
   }
 ]

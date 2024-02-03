@@ -51,7 +51,7 @@ function navigatorModal() {
                 div.id = `div-${lesObj}`;
                 div.innerHTML = `<div class="n_pageCard">
                 <h1 class="n_pageTitle" onclick="window.location.href='${linObj}'">${txtObj}</h1>
-                <img class="arrow" src="https://dev-z01.zentas.tech/img/Arrow%2010.png">
+                <img class="arrow" src="">
             </div>`;
 
                 mainContainer.appendChild(div);
