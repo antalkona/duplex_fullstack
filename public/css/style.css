@@ -16,11 +16,7 @@
 ::-webkit-scrollbar {
     width: 0;
 }
-header iframe {
-    position: fixed;
-
-
-
+\
     z-index: 1000;
 }
 .main {
@@ -93,7 +89,7 @@ header iframe {
     position: relative;
     width: 100%;
     margin-top: -7%;
-    background: rgba(255, 0, 0, 0.32);
+    background: rgba(255, 0, 0, 0);
 
     display: flex;
     flex-direction: row;
@@ -107,6 +103,30 @@ header iframe {
     height: 20vw; /* Изменено соотношение высоты к ширине */
     background: white;
     border: 1px solid black;
+
+    cursor: pointer;
+}
+.c_title{
+    position: relative;
+    top: 2%;
+    margin-left: 2%;
+    font-family: Inter;
+    font-weight: bold;
+}
+.c_line{
+    position: relative;
+    width: 150px;
+    height: 7px;
+    margin-left: calc(2% + 3px);
+    margin-top: -2%;
+
+    background: #0094FF;
+}
+.c_img2 {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    /* Дополнительные стили для изображения */
 }
 
 /* Please ❤ this if you like it! */
@@ -140,6 +160,7 @@ header iframe {
     position: absolute;
     width: 100%;
     height: 100%;
+    margin-top: 60px;
 
     display: flex;
     flex-direction: column;
@@ -264,16 +285,76 @@ header iframe {
     font-size: 45px;
     color: #0094FF;
 }
-@media (max-width: 540px ) {
+@media (min-width: 320px) and (max-width: 540px ) {
+    .card_link{
+        flex-direction: column;
+    }
+    .cardm{
+        width: 90%;
+        height: 45vw;
+    }
+    .c_display{
+        align-items: center;
 
+    }
+    .c_title_box{
+        margin-bottom: -193px;
+        border-radius: 10px;
+        background: rgba(185, 185, 185, 0.46);
+        margin-left: 0%;
+        max-height: 50%;
+        max-width: 90%;
+    }
+    .c_title2{
+        font-size: 2em;
+    }
+    .c_img2{
+        width: 30%;
+    }
 }
 
 @media (min-width: 540px) and (max-width: 720px) {
-
+    .card_link{
+        flex-direction: column;
+    }
+    .cardm{
+        width: 90%;
+        height: 45vw;
+    }
+    .c_display{
+        align-items: center;
+    }
+    .c_title_box{
+        margin-bottom: -193px;
+        border-radius: 10px;
+        background: rgba(185, 185, 185, 0.46);
+        margin-left: 0%;
+        max-height: 50%;
+        max-width: 90%;
+    }
+    .c_title2{
+        font-size: 40px;
+    }
 }
 
 @media (min-width: 720px) and (max-width: 960px) {
-
+    .card_link{
+        flex-direction: column;
+    }
+    .cardm{
+        width: 50%;
+        height: 45vw;
+    }
+    .c_display{
+        align-items: center;
+    }
+    .c_title_box{
+        margin-bottom: -193px;
+        border-radius: 10px;
+        background: rgba(185, 185, 185, 0.46);
+        margin-left: 0%;
+        max-height: 40%;
+        max-width: 80%;
 }
 
 @media (max-width: 1140px) and (min-width: 960px) {
