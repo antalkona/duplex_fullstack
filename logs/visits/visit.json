@@ -1,1 +1,29 @@
-[]
+[
+  {
+    "code": "uRvFDbUPjgz6oIag",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "05.03.2024/15:34",
+    "ip": "::1"
+  },
+  {
+    "code": "UlfhL9oYPAGywP4Z",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "05.03.2024/15:35",
+    "ip": "::1"
+  },
+  {
+    "code": "JQCSgYxYND2PwD0q",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "05.03.2024/16:14",
+    "ip": "::1"
+  }
+]
