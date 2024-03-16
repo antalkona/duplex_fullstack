@@ -2536,5 +2536,320 @@
     "url": "http://localhost:3000/",
     "time": "16.03.2024/17:28",
     "ip": "::1"
+  },
+  {
+    "code": "9zlwZfWERZi5jnBe",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "16.03.2024/21:11",
+    "ip": "::1"
+  },
+  {
+    "code": "x2BIQnHlIO7CoHKD",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "16.03.2024/21:11",
+    "ip": "::ffff:127.0.0.1"
+  },
+  {
+    "code": "GTwuHEF5zcFHrnTm",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "16.03.2024/21:12",
+    "ip": "::1"
+  },
+  {
+    "code": "nslI18fdC8wxgTqF",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "16.03.2024/21:12",
+    "ip": "::1"
+  },
+  {
+    "code": "csb9do3fmJxpaM16",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "16.03.2024/21:13",
+    "ip": "::1"
+  },
+  {
+    "code": "tOORuvraNBqfyZ8g",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "16.03.2024/21:15",
+    "ip": "::1"
+  },
+  {
+    "code": "VnDprYxYFW3zYOzR",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "16.03.2024/21:15",
+    "ip": "::1"
+  },
+  {
+    "code": "vMya3EAsy0OPYz0o",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "16.03.2024/21:15",
+    "ip": "::1"
+  },
+  {
+    "code": "Q8HiVXJJfFxu10HZ",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "16.03.2024/21:15",
+    "ip": "::1"
+  },
+  {
+    "code": "lHkBvmE0k5ATSLRq",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "16.03.2024/21:16",
+    "ip": "::1"
+  },
+  {
+    "code": "qmHmxdW5AWgeoTIk",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "16.03.2024/21:16",
+    "ip": "::1"
+  },
+  {
+    "code": "SeiCFdJ3nVylZi3v",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "16.03.2024/21:17",
+    "ip": "::1"
+  },
+  {
+    "code": "UyBzuCJwZQSpLUeb",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "16.03.2024/21:17",
+    "ip": "::1"
+  },
+  {
+    "code": "WriogqgvkvTsFtc1",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "16.03.2024/21:17",
+    "ip": "::1"
+  },
+  {
+    "code": "tcxOjBX9l3jC3jjb",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "16.03.2024/21:18",
+    "ip": "::1"
+  },
+  {
+    "code": "vNpTs5C5OZJnbvZZ",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "16.03.2024/21:18",
+    "ip": "::1"
+  },
+  {
+    "code": "irVT6me8tVz4Uz4S",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "16.03.2024/21:18",
+    "ip": "::1"
+  },
+  {
+    "code": "Nm4iDiOZPKVEp8EM",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "16.03.2024/21:19",
+    "ip": "::1"
+  },
+  {
+    "code": "AdWwZr1fSyRr9mEP",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "16.03.2024/21:19",
+    "ip": "::1"
+  },
+  {
+    "code": "5jF7KhpVfokTokGO",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "16.03.2024/21:20",
+    "ip": "::1"
+  },
+  {
+    "code": "b0J8LVinpSxcgqnd",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "16.03.2024/21:20",
+    "ip": "::1"
+  },
+  {
+    "code": "u05FJ6DTxxbKmLoA",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "16.03.2024/21:20",
+    "ip": "::1"
+  },
+  {
+    "code": "DacVMjTBTAuwcpfF",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "16.03.2024/21:20",
+    "ip": "::1"
+  },
+  {
+    "code": "Dqv7354W6Efrt6ye",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "16.03.2024/21:20",
+    "ip": "::1"
+  },
+  {
+    "code": "71UhbRu4SKzSo2h9",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "16.03.2024/21:20",
+    "ip": "::1"
+  },
+  {
+    "code": "DbrPHVRfztXHpclF",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "16.03.2024/21:21",
+    "ip": "::1"
+  },
+  {
+    "code": "2RNvszCi9WYSTFbs",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "16.03.2024/21:21",
+    "ip": "::1"
+  },
+  {
+    "code": "Hx1ZSw4w8IzDngUF",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "16.03.2024/21:23",
+    "ip": "::1"
+  },
+  {
+    "code": "MbsuwPoMBbxQPgF1",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "16.03.2024/21:23",
+    "ip": "::1"
+  },
+  {
+    "code": "xJ0JQAjM5PTwfoAf",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "16.03.2024/21:23",
+    "ip": "::1"
+  },
+  {
+    "code": "gFsHjGSTdecD3sss",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "16.03.2024/21:24",
+    "ip": "::1"
+  },
+  {
+    "code": "qMjispboHmaPjffJ",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "16.03.2024/21:25",
+    "ip": "::1"
+  },
+  {
+    "code": "LeETNqIn1uiw35LC",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "16.03.2024/21:25",
+    "ip": "::1"
+  },
+  {
+    "code": "YF5cnCbkTScBHtrh",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "16.03.2024/21:25",
+    "ip": "::1"
+  },
+  {
+    "code": "GfQLY2Zk7v8VHafZ",
+    "platform": "Win32",
+    "language": "ru",
+    "appVersion": "5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "url": "http://localhost:3000/",
+    "time": "16.03.2024/21:25",
+    "ip": "::1"
   }
 ]
