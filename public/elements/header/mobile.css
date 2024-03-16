@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 header{
     z-index: 1000;
     position: fixed;
@@ -14,5 +15,108 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 50px 50px;
+
+
+}
+
+.mob_logo{
+    margin-left: 3%;
+    height: 60%;
+}
+.mob_menu{
+    height: 45%;
+    margin-right: 3%;
+}
+.burger{
+    display: none;
+    z-index: 1001;
+    position: fixed;
+    width: 100vw;
+    height: calc(100vh - 60px);
+    top: 60px;
+    background: rgba(180, 180, 180, 0.5);
+}
+.mobileBurger{
+    right: 0%;
+    z-index: 1001;
+    position: fixed;
+    width: 70vw;
+    height: calc(100vh - 60px);
+    top: 60px;
+    background: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+
+}
+
+.MB_line{
+    position: absolute;
+    width: 100%;
+    height: 1.5px;
+    background: #797979;
+}
+.MB_butbox{
+    margin-top:3%;
+    position: relative;
+    width: 100%;
+    height: 7%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+
+}
+.mbb_img{
+    margin-left: 5%;
+    height: 60%;
+}
+.mbbtitle{
+    margin-top: 5% ;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 150%;
+    color: #858585;
+}
+.mbb_box{
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+}
+.leftico{
+    margin-right:5%;
+    height: 40%;
+}
+.mb_search{
+    background: #D7D7D7FF;
+    height: 70%;
+    margin-left: 5%;
+    border-radius: 4px;
+}
+.sico{
+    background: #d7d7d7;
+    width: 20%;
+    margin-right: 5%;
+    height: 70%;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sicoi{
+    height: 50%;
+}
+.id001{
+    font-size: 100%;
+}
+.id002{
+    position: absolute;
+    bottom: 1%;
 }

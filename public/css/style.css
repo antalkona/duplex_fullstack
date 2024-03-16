@@ -285,6 +285,86 @@
     font-size: 45px;
     color: #0094FF;
 }
+.news{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 3%;
+}
+.newstitle_box{
+    margin-top: 2%;
+    width: 75%;
+}
+.newstitle{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 2em;
+}
+.newstitleline{
+    margin-top: -0.7%;
+    background: #0094FF;
+    width: 10%;
+    height: 4px;
+}
+.new_container{
+    margin-top: 1%;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    gap: 3%;
+}
+.news_card{
+    cursor: pointer;
+    width: 30%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
+
+
+
+}
+.mn_img{
+    height: 60%;
+
+    /*height: 100%;*/
+    width: auto;
+    max-width: none; /* Позволяет изображению не сужаться */
+}
+.mb_date{
+    margin-top: 2%;
+    width: 94%;
+
+
+}
+.mnd_text{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 1em;
+}
+.mnd_line{
+    margin-top: -1%;
+    width: 16%;
+    height: 4px;
+    background: #0094FF;
+}
+.mb_title{
+    margin-top: 2%;
+    width: 94%;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.news_card:hover .mb_title{
+    color: #0094FF;
+}
 @media (min-width: 320px) and (max-width: 540px ) {
     .card_link{
         flex-direction: column;
