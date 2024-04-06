@@ -27,6 +27,7 @@
     "ip": "::1"
   },
   {
+<<<<<<< Updated upstream
     "code": "GfzgMP6ukutQ512b",
     "platform": "Win32",
     "language": "ru",
@@ -2886,6 +2887,230 @@
     "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36",
     "url": "http://localhost:3000/",
     "time": "31.03.2024/23:14",
+=======
+    "code": "PcAs8jvpRMMcNno1",
+    "platform": "MacIntel",
+    "language": "ru",
+    "appVersion": "5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+    "url": "http://localhost:3000/",
+    "time": "13.03.2024/16:26",
+    "ip": "::1"
+  },
+  {
+    "code": "9W8A585iqVhgsmGx",
+    "platform": "MacIntel",
+    "language": "ru",
+    "appVersion": "5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+    "url": "http://localhost:3000/",
+    "time": "13.03.2024/16:27",
+    "ip": "::1"
+  },
+  {
+    "code": "j4yCVCesjcv3Q7is",
+    "platform": "MacIntel",
+    "language": "ru",
+    "appVersion": "5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+    "url": "http://localhost:3000/",
+    "time": "13.03.2024/16:28",
+    "ip": "::1"
+  },
+  {
+    "code": "HGoTd8aqgGnvQLvy",
+    "platform": "MacIntel",
+    "language": "ru",
+    "appVersion": "5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+    "url": "http://localhost:3000/",
+    "time": "13.03.2024/16:29",
+    "ip": "::1"
+  },
+  {
+    "code": "N3jDXHXeb5yzH33Z",
+    "platform": "MacIntel",
+    "language": "ru",
+    "appVersion": "5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+    "url": "http://localhost:3000/",
+    "time": "13.03.2024/16:29",
+    "ip": "::1"
+  },
+  {
+    "code": "LkMsomZn3RYJUt6T",
+    "platform": "MacIntel",
+    "language": "ru",
+    "appVersion": "5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+    "url": "http://localhost:3000/",
+    "time": "13.03.2024/16:29",
+    "ip": "::1"
+  },
+  {
+    "code": "C6fjcZPsQdn1B4GE",
+    "platform": "MacIntel",
+    "language": "ru",
+    "appVersion": "5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+    "url": "http://localhost:3000/",
+    "time": "13.03.2024/16:32",
+    "ip": "::1"
+  },
+  {
+    "code": "XKFJDugMGvy2oDOy",
+    "platform": "MacIntel",
+    "language": "ru",
+    "appVersion": "5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+    "url": "http://localhost:3000/",
+    "time": "13.03.2024/16:32",
+    "ip": "::1"
+  },
+  {
+    "code": "N1cqtIrFjYWP53yI",
+    "platform": "MacIntel",
+    "language": "ru",
+    "appVersion": "5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+    "url": "http://localhost:3000/",
+    "time": "13.03.2024/16:34",
+    "ip": "::1"
+  },
+  {
+    "code": "mkC0jnz0eJ8xlEoo",
+    "platform": "MacIntel",
+    "language": "ru",
+    "appVersion": "5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+    "url": "http://localhost:3000/",
+    "time": "13.03.2024/16:34",
+    "ip": "::1"
+  },
+  {
+    "code": "1WzG85SUCm6QkKYH",
+    "platform": "MacIntel",
+    "language": "ru",
+    "appVersion": "5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+    "url": "http://localhost:3000/",
+    "time": "13.03.2024/16:35",
+    "ip": "::1"
+  },
+  {
+    "code": "N6qu0SLVQ3UVx2ml",
+    "platform": "MacIntel",
+    "language": "ru",
+    "appVersion": "5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+    "url": "http://localhost:3000/",
+    "time": "13.03.2024/16:38",
+    "ip": "::1"
+  },
+  {
+    "code": "lkCNvdj4mie9Gfgi",
+    "platform": "MacIntel",
+    "language": "ru",
+    "appVersion": "5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+    "url": "http://localhost:3000/",
+    "time": "13.03.2024/16:38",
+    "ip": "::1"
+  },
+  {
+    "code": "a5vvhmN8YzZVHZJo",
+    "platform": "MacIntel",
+    "language": "ru",
+    "appVersion": "5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+    "url": "http://localhost:3000/",
+    "time": "13.03.2024/16:39",
+    "ip": "::1"
+  },
+  {
+    "code": "LFUeXG5OpiqS4FcJ",
+    "platform": "MacIntel",
+    "language": "ru",
+    "appVersion": "5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+    "url": "http://localhost:3000/",
+    "time": "13.03.2024/20:24",
+    "ip": "::1"
+  },
+  {
+    "code": "IPRPq0G4NWx186t9",
+    "platform": "MacIntel",
+    "language": "ru",
+    "appVersion": "5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+    "url": "http://localhost:3000/",
+    "time": "13.03.2024/20:24",
+    "ip": "::1"
+  },
+  {
+    "code": "RV8ydPAnXI9YRThN",
+    "platform": "MacIntel",
+    "language": "ru",
+    "appVersion": "5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+    "url": "http://localhost:3000/",
+    "time": "13.03.2024/20:25",
+    "ip": "::1"
+  },
+  {
+    "code": "scmF9y90oDkryUw2",
+    "platform": "MacIntel",
+    "language": "ru",
+    "appVersion": "5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+    "url": "http://localhost:3000/",
+    "time": "13.03.2024/20:25",
+    "ip": "::1"
+  },
+  {
+    "code": "EQr9MdQxFeAIyU8z",
+    "platform": "MacIntel",
+    "language": "ru",
+    "appVersion": "5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+    "url": "http://localhost:3000/",
+    "time": "13.03.2024/20:56",
+    "ip": "::1"
+  },
+  {
+    "code": "jCeqvVRSblTGhYwb",
+    "platform": "MacIntel",
+    "language": "ru",
+    "appVersion": "5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+    "url": "http://localhost:3000/",
+    "time": "13.03.2024/20:57",
+    "ip": "::1"
+  },
+  {
+    "code": "r9RO7s9LYtgvYtqG",
+    "platform": "MacIntel",
+    "language": "ru",
+    "appVersion": "5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+    "url": "http://localhost:3000/",
+    "time": "13.03.2024/20:57",
+    "ip": "::1"
+  },
+  {
+    "code": "zfEQnQNQuY4238UP",
+    "platform": "MacIntel",
+    "language": "ru",
+    "appVersion": "5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+    "url": "http://localhost:3000/",
+    "time": "13.03.2024/22:22",
+    "ip": "::1"
+  },
+  {
+    "code": "KeSulaLAbreKUvMv",
+    "platform": "MacIntel",
+    "language": "ru",
+    "appVersion": "5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+    "url": "http://localhost:3000/",
+    "time": "13.03.2024/22:23",
+    "ip": "::1"
+  },
+  {
+    "code": "Efr9jfDbnfCTfKNk",
+    "platform": "MacIntel",
+    "language": "ru",
+    "appVersion": "5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+    "url": "http://localhost:3000/",
+    "time": "13.03.2024/23:19",
+    "ip": "::1"
+  },
+  {
+    "code": "hiDKN0P530tlc4Qn",
+    "platform": "MacIntel",
+    "language": "ru",
+    "appVersion": "5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+    "url": "http://localhost:3000/",
+    "time": "14.03.2024/13:17",
+>>>>>>> Stashed changes
     "ip": "::1"
   }
 ]
