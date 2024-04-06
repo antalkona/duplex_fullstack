@@ -4,8 +4,8 @@
         "login": "admin",
         "name": "Алексей",
         "password": "admin",
-        "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDg4MzkiLCJpYXQiOjE3MTI0MDI5NTcsImV4cCI6MTcxMzY5ODk1N30.HXMGne7dfzCIN91R6PUZeeQYRY371bLheSTtj5WChv4",
-        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDg4MzkiLCJpYXQiOjE3MTI0MDI5NTcsImV4cCI6MTcxMjQ4OTM1N30.wvS43HLGS5AVLYVNhAIyrgtwF1ZYKAl6yL7nK6WImcI",
+        "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDg4MzkiLCJpYXQiOjE3MTI0MDU2MzcsImV4cCI6MTcxMzcwMTYzN30.t0RIDHq04BYUUwOnxS3JqddaQOkC4q7B5t4HedqM6Zc",
+        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDg4MzkiLCJpYXQiOjE3MTI0MDU2MzcsImV4cCI6MTcxMjQ5MjAzN30.k4iHK6b1Z6G4WRgw0AUxJVrakc283wJAEQlmgw0xoOA",
         "premise": [
             "cms",
             "shed",

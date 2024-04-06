@@ -1,374 +1,58 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./style.css">
-  <title>Education CMS</title>
-  <link rel="icon" id="icon" href="#">
-  <script>
-    // Функция для получения иконки и установки пути к ней
-    function setFavicon() {
-      // Получаем доменное имя текущего сайта
-      const domain = window.location.origin;
-
-      // Устанавливаем путь к иконке (замените 'path/to/your/favicon.ico' на реальный путь)
-      const iconPath = domain + "/assets/images/icon/4.jpg";
-
-      // Устанавливаем иконку
-      document.getElementById("icon").href = iconPath;
-    }
-
-    // Вызываем функцию при загрузке страницы
-    window.onload = setFavicon;
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Меню</title>
 </head>
-<div class="alert alert-success alertmsg" id="alertmsg" role="alert">
-
-</div>
-<div class="alert alert-danger alertmsg" id="alerterr" role="alert">
-
-</div>
 <body>
-
-<!-- Модальное окно -->
-<div class="modal" id="myModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-
-      <!-- Заголовок модального окна -->
-      <div class="modal-header">
-        <h4 class="modal-title">Произошла ошибка</h4>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>
-
-      <!-- Тело модального окна -->
-      <div class="modal-body">
-        <p>Произошла ошибка при обработке запроса.</p>
-      </div>
-
-      <!-- Кнопки для закрытия модального окна -->
-      <div class="modal-footer">
-        <button type="button"  onclick="closeModal()" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-<div class="body2" id="loader">
-  <div class="banter-loader">
-    <div class="banter-loader__box"></div>
-    <div class="banter-loader__box"></div>
-    <div class="banter-loader__box"></div>
-    <div class="banter-loader__box"></div>
-    <div class="banter-loader__box"></div>
-    <div class="banter-loader__box"></div>
-    <div class="banter-loader__box"></div>
-    <div class="banter-loader__box"></div>
-    <div class="banter-loader__box"></div>
-  </div>
-</div>
-
-<div id="hello" class="hello">
-  <img class="h_img" src="9878627.jpg">
-  <img src="./Group%20133.png" alt="" class="z_logo">
-  <div class="h_cont">
-    <h1 class="h_txt">Здравствуйте,</h1>
-    <h1 class="h_txt" id="h_name" >Имя</h1>
-  </div>
-
-
-</div>
-
-  <header>
-    <img src="./Group%20270.png" alt="" class="logo_cms">
-    <div class="user">
-      <img src="./Group%20271.png" alt="" class="user_avatar">
-      <h1 id="name" class="user_name">имя</h1>
-    </div>
-  </header>
-  <div class="l_menu">
-    <h1 class="yorg_txt">Ваша организация:</h1>
-    <div class="lm_org">
-      <img class="lmo_img" src="./school-2%201.png" alt="">
-      <h1 class="lmo_txt1">МАОУ Предметно-языкова школа</h1>
-      <h1 class="lmo_txt2">Дуплекс</h1>
-    </div>
-    <div id="cite_p" onclick="showElement(main1)" class="page_case pcm">
-      <img src="./browser-2%201.png" alt="" class="pc_img">
-      <h1 class="pc_txt">САЙТ</h1>
-    </div>
-    <div onclick="showElement(main2)" class="page_case">
-      <img src="./browser-2%2012.png" alt="" class="pc_img">
-      <h1 class="pc_txt">ОБНОВЛЕНИЯ</h1>
-    </div>
-    <div onclick="showElement(main3)"  class="page_case">
-      <img src="./base.png" alt="" class="pc_img">
-      <h1 class="pc_txt">БАЗЫ</h1>
-    </div>
-    <div onclick="showElement(main4)"  class="page_case">
-      <img src="./anal.png" alt="" class="pc_img">
-      <h1 class="pc_txt">АНАЛИТИКА</h1>
-    </div>
-    <div onclick="showElement(main5)"  class="page_case">
-      <img src="./pages.png" alt="" class="pc_img">
-      <h1 class="pc_txt">СТРАНИЦЫ</h1>
-    </div>
-    <div onclick="showElement(main6)"  class="page_case">
-      <img src="./acc.png" alt="" class="pc_img">
-      <h1 class="pc_txt">АККАУНТЫ</h1>
-    </div>
-    <div onclick="showElement(main7)" class="page_case">
-      <img src="./com.png" alt="" class="pc_img">
-      <h1 class="pc_txt">КОМАНДЫ</h1>
-    </div>
-    <div onclick="openModal()" class="page_case">
-      <img src="./ser.png" alt="" class="pc_img">
-      <h1 class="pc_txt">НАСТРОЙКИ</h1>
-    </div>
-    <div class="page_caseN"></div>
-    <div  onclick="link('/admin/dashboard/create')" class="page_case">
-      <img src="./link.png" alt="" class="pc_img">
-      <h1 class="pc_txt">РАСПИСАНИЕ</h1>
-    </div>
-    <div  onclick="link('/admin/mainpage')" class="page_case">
-      <img src="./link.png" alt="" class="pc_img">
-      <h1 class="pc_txt">MainPage</h1>
-    </div>
-    <div class="page_case">
-      <img src="./link.png" alt="" class="pc_img">
-      <h1 class="pc_txt">САЙТ РАЗРАБОТЧИКА</h1>
-    </div>
-    <div class="page_case">
-      <img src="./link.png" alt="" class="pc_img">
-      <h1 class="pc_txt">ДОКУМЕНТАЦИЯ</h1>
-    </div>
-    <div class="page_case">
-      <img src="./link.png" alt="" class="pc_img">
-      <h1 class="pc_txt">ТАРИФЫ</h1>
-    </div>
-    <div class="page_case">
-      <img src="./link.png" alt="" class="pc_img">
-      <h1 class="pc_txt">ZENTAS DEV TOOL</h1>
-    </div>
-    <div class="page_case">
-      <img src="./link.png" alt="" class="pc_img">
-      <h1 class="pc_txt">Я. ВЕБМАСТЕР</h1>
-    </div>
-    <div class="page_case">
-      <img src="./link.png" alt="" class="pc_img">
-      <h1 class="pc_txt">ПОДДЕРЖКА</h1>
-    </div>
-    <div class="page_caseN"></div>
-  </div>
-  <div id="main1" data-id="main" class="main">
-    <div class="header_page">
-      <h1 class="hp_ptxt">Сайт</h1>
-      <h1 class="hp_pmtxt">school84.permedu.ru</h1>
-      <button class="hp_btn">перейти на сайт</button>
-    </div>
-    <div class="m_cite main2">
-      <h1 class="m2_title">Быстрые функции</h1>
-      <div class="func_case">
-        <input id="closeOpen" onclick="onclickcheckboxopen('closeOpen', 'open')" type="checkbox" checked style="--s:25px">
-        <h1  class="func_title">Открыть / закрыть</h1>
-      </div>
-      <div class="func_case">
-        <input onclick="onclickcheckboxopen('tehOnOf', 'dev')" id="tehOnOf" type="checkbox" checked style="--s:25px">
-        <h1 class="func_title">Тех.работы</h1>
-      </div>
-      <div class="func_case">
-        <input type="checkbox" checked style="--s:25px">
-        <h1 class="func_title">Установить PIN</h1>
-      </div>
-      <div class="func_case">
-        <input type="checkbox" checked style="--s:25px">
-        <h1 class="func_title">Сообщения</h1>
-      </div>
-      <br>
-      <h1 class="m2_twotitle">Статусы</h1>
-      <div class="m2_stats">
-        <h1 class="m2_stat_txt">Версия: <span>0.0.1 [Alpha]</span> </h1>
-        <h1 class="m2_stat_txt">Кол-во ошибок: <span>no data</span> </h1>
-        <h1 class="m2_stat_txt">Синхр.: <span>no data</span> </h1>
-        <h1 class="m2_stat_txt">БД: <span>no data</span> </h1>
-      </div>
-      <br>
-      <button style="cursor: pointer" class="pagem">Сохранить</button>
-    </div>
-  </div>
-  <div id="main2" data-id="main" class="main">
-    <div class="header_page">
-      <h1 class="hp_ptxt">Обновления</h1>
-      <h1 class="hp_pmtxt">school84.permedu.ru</h1>
-      <button class="hp_btn">Проверить</button>
-    </div>
-    <div class="m_cite main2">
-      <h1 class="m2_title">Установка:</h1>
-      <div class="func_case c2f">
-
-        <h1 class="func_title">* Система автоматического обновления в разработке, информацию о новой версии можно узнать в телеграм канале. <br>! Через 45 дней после выхода обновления старая версия перестает работать.<br><br> Нажмите на кнопку “проверить” после чего откроется страница на которой можно посмотреть информацию об обновлении и скачать обновление. Заменить файлы из установленного архива которые прописаны в инструкции к обновлению, а также необходимо вставить строчки настроек в файлы которые прописаны в инструкции. Перезагрузите Node.js сервер для установки обновления<br> <br>Рекомендации: Создание резервной копии перед обновление Установите тумблер в админ панели на странице “сайт” во время обновления Прочитайте подробную документацию на нашем сайте перед установкой вашего первого обновления <br><br>>> Если вы не можете самостоятельно сделать обновление оставьте запрос на сайте <br>>> Если вы столкнулись с проблемой или ошибкой сделайте скриншоты и восстановите старую версию, после чего напишите в поддержку обращение со скриншотами</h1>
-      </div>
-
-  </div>
-</div>
-  <div id="main3" data-id="main" class="main">
-    <div class="header_page">
-      <h1 class="hp_ptxt">Базы</h1>
-      <h1 class="hp_pmtxt">school84.permedu.ru</h1>
-      <button class="hp_btn btn_dev_hp">В разработке</button>
-    </div>
-    <div class="m_cite main2">
-      <h1 class="m2_title">Информация:</h1>
-      <div class="func_case c2f">
-
-        <h1 class="func_title">Сервис “базы” находится в разработке... С помощью сервиса можно создавать публичные или закрытые опросы,
-          Формы обратной связи, и работать с полученными данными.</h1>
-      </div>
-
-  </div>
-  </div>
-  <div id="main4" data-id="main" class="main">
-    <div class="header_page">
-      <h1 class="hp_ptxt">Аналитика</h1>
-      <h1 class="hp_pmtxt">school84.permedu.ru</h1>
-      <button class="hp_btn">Документация</button>
-    </div>
-    <div class="m_cite main2">
-      <h1 class="m2_title">Информация:</h1>
-      <h1 class="func_title">Подключите сервисы аналитики для сайта.</h1>
-      <div class="func_case c3f">
-        <div class="input_case">
-          <h1 class="input_name">Яндекс метрика:</h1>
-          <div class="input_line">
-            <input type="text" placeholder="Вставьте API ключ" class="input_p">
-            <button class="p">Send</button>
-          </div>
+    <background>
+        <div class="shape1"></div>
+        <div class="shape2"></div>
+    </background>
+    <header>
+        <img src="./assets/logo.png" alt="" class="logo">
+        <h1 class="adminTitle">Панель управления сайтом</h1>
+        <div class="userInfo">
+            <h1 class="userName" id="userName">Гость</h1>
+            <div class="iconframe" id="iconframe" onclick="openMenu(1)">
+                <img src="./assets/3d_character_58.jpg" alt="" class="iconImg">
+            </div>
         </div>
-        <div class="input_case">
-          <h1 class="input_name">Google Analitics</h1>
-          <div class="input_line">
-            <input type="text" placeholder="Вставьте API ключ" class="input_p">
-            <button class="p">Send</button>
-          </div>
+    </header>
+    <usermenu id="usermenu" class="animate__animated animate__fadeInDown">
+        <div class="avatarBox">
+            <img src="./assets/3d_character_58.jpg" alt="" class="Avatar">
         </div>
-        <div class="input_case">
-          <h1 class="input_name">Зентас статистика (в разработке)</h1>
-          <div class="input_line">
-            <input type="text" placeholder="Вставьте API ключ" class="input_p">
-            <button class="p p2">Send</button>
-          </div>
+        <h1 class="mName" id="mName">Name</h1>
+        <h1 class="mId" id="mId">Name</h1>
+        <div class="premlist">
+            <h1 class="rules">Права: <span id="mPrem"></span></h1>
         </div>
-
-      </div>
-
-  </div>
-</div>
-
-
-
-
-
-<!--  <div id="main4" data-id="main" class="main">-->
-<!--    <div class="header_page">-->
-<!--      <h1 class="hp_ptxt">Базы</h1>-->
-<!--      <h1 class="hp_pmtxt">school84.permedu.ru</h1>-->
-<!--      <button class="hp_btn btn_dev_hp">В разработке</button>-->
-<!--    </div>-->
-<!--    <div class="m_cite main2">-->
-<!--      <h1 class="m2_title">Информация:</h1>-->
-<!--      <div class="func_case c2f">-->
-
-<!--        <h1 class="func_title">Сервис “базы” находится в разработке... С помощью сервиса можно создавать публичные или закрытые опросы,-->
-<!--          Формы обратной связи, и работать с полученными данными.</h1>-->
-<!--      </div>-->
-
-<!--  </div>-->
-<!--  </div>-->
-  <div id="main5" data-id="main" class="main">
-    <div class="header_page">
-      <h1 class="hp_ptxt">Страницы</h1>
-      <h1 class="hp_pmtxt">school84.permedu.ru</h1>
-      <button class="hp_btn">Документация</button>
-    </div>
-    <div class="m_cite main2">
-      <h1 class="m2_title">Информация:</h1>
-      <h1 class="func_title">Создайте страницы по готовому шаблону либо загрузите свой</h1>
-      <button onclick="link('/admin/dashboard/pages')" class="p pp">Открыть редактор старницы</button>
-
-
-    </div>
-
-  </div>
-
-<div id="main6" data-id="main" class="main">
-  <div class="header_page">
-    <h1 class="hp_ptxt">Аккаунты</h1>
-    <h1 class="hp_pmtxt">school84.permedu.ru</h1>
-    <button class="hp_btn">В разработке</button>
-  </div>
-  <div class="m_cite main2">
-    <h1 class="m2_title">Информация:</h1>
-    <div class="func_case c2f">
-
-      <h1 class="func_title">В разработке... С помощью данного инструмента можно создавать пользователей админ панели и управлять ими
-        <br>
-        Чтобы создать пользователя пока инструмент в разработке прочитайте с документацией<h1>
-    </div>
-
-  </div>
-</div>
-<div id="main7" data-id="main" class="main">
-  <div class="header_page">
-    <h1 class="hp_ptxt">Команды</h1>
-    <h1 class="hp_pmtxt">school84.permedu.ru</h1>
-    <button class="hp_btn">Документация</button>
-  </div>
-  <div class="m_cite main2">
-    <h1 class="m2_title">Информация:</h1>
-    <h1 class="func_title">С помощью команд можно отправлять POST запросы на сервер для настройки, проверки, создания чего либо. Как сделать пост запрос можно прочитать в документации.</h1>
-    <div class="func_case c3f">
-      <div class="input_case">
-        <h1 class="input_name">Отправить пост запрос</h1>
-        <div class="input_line">
-          <input type="text" id="json_key" placeholder="Укажите КЛЮЧ запроса" class="input_p">
-          <input type="text" id="json_boolean" placeholder="Укажите значение запроса" class="input_p">
-          <button class="p">Send</button>
+        <div class="logout" onclick="window.location.href = '/api/admin/logout';">
+            Выход
         </div>
-      </div>
-      <div class="input_case">
-        <h1 class="input_name">Шаблон отправки:</h1>
-        <div class="input_line">
-          <div class="code_json_space">
-            <h1 class="code">
-              {
-              <br>
-              "<span id="json1">ПУСТО</span>": "<span id="json2">ПУСТО</span>"
-              <br>
-              }
-            </h1>
-          </div>
-        </div>
-      </div>
+        <div class="margintm"></div>
+    </usermenu>
+    <main>
 
+    </main>
+    <script src="./assets/script.js"></script>
+    <script src="./assets/function.js"></script>
+    <!-- Begin of Chaport Live Chat code -->
+    <script type="text/javascript">
+        (function(w,d,v3){
+            w.chaportConfig = {
+                appId : '6609a378357caf59f85becb4'
+            };
 
-    </div>
-
-  </div>
-</div>
-
-
-<style>
-
-</style>
-
+            if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push(arguments)};v3.on=function(e,fn){if(!v3._l[e])v3._l[e]=[];v3._l[e].push(fn)};var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://app.chaport.com/javascripts/insert.js';var ss=d.getElementsByTagName('script')[0];ss.parentNode.insertBefore(s,ss)})(window, document);
+    </script>
+    <!-- End of Chaport Live Chat code -->
 </body>
-<script src="script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </html>

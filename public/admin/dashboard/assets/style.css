@@ -27,6 +27,13 @@ header{
     justify-content: start;
     gap: 10px;
 }
+.adminTitle{
+    font-size: 15px;
+    color: #c4c4c4;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin-left: -10%;
+}
 .userName{
     font-size: 20px;
     color: #c4c4c4;
@@ -171,117 +178,4 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-.main{
-    z-index: 1002;
-    width: 90%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 5%;
-}
-.card{
-    cursor: pointer;
-    position: relative;
-    height: 25vh;
-    width: 40vh;
-    border-radius: 12px;
-    border: 0.5px solid white;
-    background: #0d1821;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: start;
-    gap: 15px;
-    transition: 0.5s;
-}
-.card:hover{
-    scale: 1.05;
-}
-.cardTitle{
-    margin-top: 3%;
-    margin-left: 3%;
-    font-family: Roboto;
-    font-weight: 400;
-    font-size: 25px;
-    color: white;
-}
-.cardImg{
-    position: relative;
-    bottom: -30%;
-    left: 57%;
-}
-.cardImg2{
-    height: 50%;
-    position: relative;
-    bottom: -30%;
-    left: 77%;
-}
-.cardShape{
-    position: absolute;
-    left: -40px;
-    bottom: -50px;
-    width: 150px;
-    height: 150px;
-    border-radius: 100%;
-    background: #0e33b7;
-    fill: #0e33b7;
-    filter: blur(60px);
-}
-.cardBack{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-#follower, #follower2, #follower3 {
-    display: none;
-    width: 50px;
-    height: 50px;
-    background-color: white;
-    fill: #0e33b7;
-    filter: blur(20px);
-    border-radius: 50%; /* Делает элемент круглым */
-    position: absolute; /* Позиционирование относительно родительского элемента */
-    z-index: 9999; /* Устанавливаем z-index, чтобы элемент находился над остальным контентом */
-}
-
-.modalNotify{
-    position: fixed;
-    z-index: 1001;
-    width: 50%;
-    height: 40%;
-    background: #1c2235;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.moadlFrame{
-    display: none;
-    z-index: 1001;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    background: rgba(28, 34, 53, 0.48);
-}
-.moadlTitle{
-    font-family: Roboto;
-    font-weight: 600;
-    color: white;
-    font-size: 30px;
-}
-.moadlTitle2{
-    font-family: Roboto;
-    font-weight: 400;
-    color: #bebebe;
-    font-size: 25px;
 }

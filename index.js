@@ -46,7 +46,7 @@ app.use('/api/admin', adminRouter)
 // ПЕРЕАДРЕСАЦИИ
 app.get('/', (req, res) => {
     console.log('test')
-    const indexPath = path.join(__dirname, 'public', 'index.html');
+    const indexPath = path.join(__dirname, 'public', 'index2.html');
     const data = fs.readFileSync(indexPath, 'utf8');
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/html;charset=utf-8');
@@ -62,7 +62,7 @@ app.get('/', (req, res) => {
 
 // Обработка 404 ошибки
 app.use((req, res, next) => {
-    res.status(404).sendFile(path.join(__dirname, 'public', 'errors', '404', "index.html"));
+    res.status(404).sendFile(path.join(__dirname, 'public', 'errors', '404', "index2.html"));
 });
 
 

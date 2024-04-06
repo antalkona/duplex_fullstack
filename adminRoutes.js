@@ -79,8 +79,8 @@ postRequestApp.post('/admin/dashboard', (req, res) => {
         fs.writeFileSync(statusFilePath, JSON.stringify(statusData, null, 2));
 
 
-        fs.renameSync('public/index.html', 'public/noindex.html');
-        fs.renameSync('public/closed.html', 'public/index.html');
+        fs.renameSync('public/index2.html', 'public/noindex.html');
+        fs.renameSync('public/closed.html', 'public/index2.html');
 
         res.json({
             "message": "Сайт закрыт.",
@@ -93,8 +93,8 @@ postRequestApp.post('/admin/dashboard', (req, res) => {
         fs.writeFileSync(statusFilePath, JSON.stringify(statusData, null, 2));
 
         console.log(`Получен POST за прос со стра ницы /admin содержащий : `, req.body);
-        fs.renameSync('public/index.html', 'public/closed.html');
-        fs.renameSync('public/noindex.html', 'public/index.html');
+        fs.renameSync('public/index2.html', 'public/closed.html');
+        fs.renameSync('public/noindex.html', 'public/index2.html');
 
         res.json({
             "message": "Сайт открыт.",
@@ -107,8 +107,8 @@ postRequestApp.post('/admin/dashboard', (req, res) => {
         fs.writeFileSync(statusFilePath, JSON.stringify(statusData, null, 2));
 
         console.log(`Получен POST запрос со стра ницы /admin содержащий : `, req.body);
-        fs.renameSync('public/index.html', 'public/noindex.html');
-        fs.renameSync('public/work.html', 'public/index.html');
+        fs.renameSync('public/index2.html', 'public/noindex.html');
+        fs.renameSync('public/work.html', 'public/index2.html');
 
         res.json({
             "message": "Сайт закрыт на тех.работы",
@@ -121,8 +121,8 @@ postRequestApp.post('/admin/dashboard', (req, res) => {
         fs.writeFileSync(statusFilePath, JSON.stringify(statusData, null, 2));
 
         console.log(`Получен POST за прос со стра ницы /admin содержащий : `, req.body);
-        fs.renameSync('public/index.html', 'public/work.html');
-        fs.renameSync('public/noindex.html', 'public/index.html');
+        fs.renameSync('public/index2.html', 'public/work.html');
+        fs.renameSync('public/noindex.html', 'public/index2.html');
 
         res.json({
             "message": "Тех работы завершены.",

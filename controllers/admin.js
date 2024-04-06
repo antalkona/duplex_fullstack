@@ -91,5 +91,14 @@ class admin{
             next(err)
         }
     }
+    async logout(req, res, next){
+        try {
+            res.clearCookie('refreshToken')
+            res.clearCookie('accessToken')
+            res.redirect('/')
+        }catch (err){
+            next(err)
+        }
+    }
 }
 module.exports = new admin();

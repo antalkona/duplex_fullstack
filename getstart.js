@@ -6,7 +6,7 @@ const startRequest = express.Router(); // Заменяем express() на expres
 startRequest.use(express.static(path.join(__dirname, 'start')));
 
 startRequest.get('/start', (req, res) => {
-    const indexPath = path.join(__dirname, 'start', 'index.html');
+    const indexPath = path.join(__dirname, 'start', 'index2.html');
     const data = fs.readFileSync(indexPath, 'utf8');
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/html;charset=utf-8');
@@ -73,7 +73,7 @@ startRequest.post('/start', (req, res) => {
         fs.writeFileSync(filePath, JSON.stringify(ServerCfgs, null, 2));
 
         res.status(200).json({message: 'Данные LOCALSERVER обновлены'});
-        const filePath2 = path.join(__dirname, 'start', 'index.html'); // Замените на путь к вашему файлу
+        const filePath2 = path.join(__dirname, 'start', 'index2.html'); // Замените на путь к вашему файлу
 
         fs.unlink(filePath2, (err) => {
             if (err) {

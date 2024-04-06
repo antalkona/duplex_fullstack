@@ -19,7 +19,7 @@ mainPage.post('/data', (req, res) => {
 mainPage.post('/admin/mainpage', (req, res) => {
     if (req.body && req.body.title) {
         const pageTitle = req.body.title.trim();  // Получаем заголовок страницы из POST-запроса
-        const filePath = path.join(__dirname, 'public', 'index.html');
+        const filePath = path.join(__dirname, 'public', 'index2.html');
         let fileContent = fs.readFileSync(filePath, 'utf8');  // Читаем содержимое нового файла
 
         // Заменяем содержимое тега <title> с учетом возможных пробелов и символов новой строки

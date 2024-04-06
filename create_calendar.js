@@ -78,7 +78,7 @@ pagesRequestApp2.post('/admin/dashboard/create', (req, res) => {
 
 // GET-запрос для отображения страницы с формой загрузки файла
 pagesRequestApp2.get('/schedule', (req, res) => {
-    const pagePath = path.join(__dirname, 'public', 'schedule', 'index.html');
+    const pagePath = path.join(__dirname, 'public', 'schedule', 'index2.html');
     fs.readFile(pagePath, 'utf8', (err, data) => {
         if (err) {
             res.status(404).send('Страница не найдена.');
