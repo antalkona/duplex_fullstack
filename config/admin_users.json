@@ -1,8 +1,16 @@
 [
-  {
-    "id": "608839",
-    "login": "admin",
-    "name": "alex",
-    "password": "admin"
-  }
+    {
+        "id": "608839",
+        "login": "admin",
+        "name": "Алексей",
+        "password": "admin",
+        "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDg4MzkiLCJpYXQiOjE3MTE5MDk0NzAsImV4cCI6MTcxMzIwNTQ3MH0.7pCPE_NYmEaxVXgaJqkP2QFx1UXlPGixw3999VqLIrY",
+        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDg4MzkiLCJpYXQiOjE3MTE5MDk0NzAsImV4cCI6MTcxMTk5NTg3MH0.US06iY6x4Nvm-ySdqJP3PXvCRy_Hx6i95qn3q6b-rQk",
+        "premise": [
+            "cms",
+            "shed",
+            "post",
+            "edit"
+        ]
+    }
 ]

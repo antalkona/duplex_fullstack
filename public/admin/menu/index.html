@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Меню</title>
+</head>
+<body>
+    <div class="moadlFrame animate__animated animate__fadeIn" id="moadl" onclick="closeModalback()">
+        <div class="modalNotify">
+            <h1 class="moadlTitle">Недостаточно прав. Обратитесь к ГА</h1>
+            <br>
+            <h1 class="moadlTitle2">Нажмите в пустое место для закрытия</h1>
+
+        </div>
+
+    </div>
+    <background>
+        <div class="shape1"></div>
+        <div class="shape2"></div>
+    </background>
+    <header>
+        <img src="./assets/logo.png" alt="" class="logo">
+        <div class="userInfo">
+            <h1 class="userName" id="userName">Гость</h1>
+            <div class="iconframe" id="iconframe" onclick="openMenu(1)">
+                <img src="./assets/3d_character_58.jpg" alt="" class="iconImg">
+            </div>
+        </div>
+    </header>
+    <usermenu id="usermenu" class="animate__animated animate__fadeInDown">
+        <div class="avatarBox">
+            <img src="./assets/3d_character_58.jpg" alt="" class="Avatar">
+        </div>
+        <h1 class="mName" id="mName">Name</h1>
+        <h1 class="mId" id="mId">Name</h1>
+        <div class="premlist">
+            <h1 class="rules">Права: <span id="mPrem"></span></h1>
+        </div>
+        <div class="logout" onclick="window.location.href = '/api/admin/logout';">
+            Выход
+        </div>
+        <div class="margintm"></div>
+    </usermenu>
+    <main>
+        <div class="main">
+            <div class="card" onclick="openC(1)">
+                <div class="cardBack"  id="card">
+                    <div class="cardShape"></div>
+                    <div id="follower"></div>
+                </div>
+                <h1 class="cardTitle">Управление сайтом</h1>
+                <img src="./assets/Yes.png" alt="" class="cardImg">
+            </div>
+            <div class="card" onclick="openC(2)">
+                <div class="cardBack"  id="card2">
+                    <div class="cardShape"></div>
+                    <div id="follower2"></div>
+                </div>
+                <h1 class="cardTitle">Управление расписанием</h1>
+                <img src="./assets/Yes2.png" alt="" class="cardImg">
+            </div>
+            <div class="card" onclick="openC(3)">
+                <div class="cardBack"  id="card3">
+                    <div class="cardShape"></div>
+                    <div id="follower3"></div>
+                </div>
+                <h1 class="cardTitle">Блог и страницы</h1>
+                <img src="./assets/Pen.png" alt="" class="cardImg2">
+            </div>
+
+        </div>
+    </main>
+    <script src="./assets/script.js"></script>
+    <script src="./assets/function.js"></script>
+    <!-- Begin of Chaport Live Chat code -->
+    <script type="text/javascript">
+        (function(w,d,v3){
+            w.chaportConfig = {
+                appId : '6609a378357caf59f85becb4'
+            };
+
+            if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push(arguments)};v3.on=function(e,fn){if(!v3._l[e])v3._l[e]=[];v3._l[e].push(fn)};var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://app.chaport.com/javascripts/insert.js';var ss=d.getElementsByTagName('script')[0];ss.parentNode.insertBefore(s,ss)})(window, document);
+    </script>
+    <!-- End of Chaport Live Chat code -->
+</body>
+</html>

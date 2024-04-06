@@ -3,14 +3,17 @@ const fs = require('fs');
 const path = require('path');
 const express = require('express');
 const bodyParser = require('body-parser'); // Добавлено для парсинга тела запроса
+require('dotenv').config();
+const cookieParser = require('cookie-parser');
 
 // ---------------------------------------------------------------
 
 // ПОДКЛЮЧЕНИЕ ФАЙЛОВ
-const postRequestApp = require('./adminRoutes'); // Путь к файлу postRequest.js
+// const postRequestApp = require('./adminRoutes'); // Путь к файлу postRequest.js
 const pageRequestAppPage = require('./create_pages'); // Путь к файлу postRequest.js
 const pageRequestAppPage2 = require('./create_calendar'); // Путь к файлу postRequest.js
 const startRequest = require('./getstart');
+const adminRouter = require('./router/radminRouter');
 const mainPage = require('./main');
 
     // telegram bot  init
@@ -23,19 +26,18 @@ server_start();
 const app = express(); // EXPRESS - для сайта
 // ---------------------------------------------------------------
 
-// ПАРЕСЕРЫ
-// ---------------------------------------------------------------
 
 // ПОДКЛЮЧЕНИЕ ИСПОЛЬЗОВАНИЙ К ПРИЛОЖЕНИЮ
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 app.use(bodyParser.json()); // Используем bodyParser для парсинга JSON данных
-
-app.use(postRequestApp);
+app.use(cookieParser());
+// app.use(postRequestApp);
 app.use(pageRequestAppPage);
 app.use(pageRequestAppPage2);
 app.use(startRequest)
 app.use(mainPage);
+app.use('/api/admin', adminRouter)
 
 
 // ---------------------------------------------------------------
