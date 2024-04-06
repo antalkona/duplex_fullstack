@@ -4,6 +4,8 @@ const path = require("path"); // Импорт функции message из telegr
 const randomNumber = Math.floor(Math.random() * (901) + 100);
 const jwt = require('jsonwebtoken');
 const cookieParser = require('cookie-parser');
+const fileUpload = require('express-fileupload');
+
 
 require('dotenv').config();
 
@@ -100,5 +102,28 @@ class admin{
             next(err)
         }
     }
+
+
+    async sendshed(req, res, next) {
+        try {
+            const saveFilePath = path.join(__dirname, '..', 'public', 'schedule', 'files');
+            if (!req.files || Object.keys(req.files).length === 0) {
+                throw new Error('No file uploaded');
+            }
+            const uploadedFile = req.files.file;
+            const fileExtension = path.extname(uploadedFile.name);
+            const randomCode = Math.floor(100000 + Math.random() * 900000);
+            const newFileName = `${randomCode}${fileExtension}`;
+            const newFilePath = path.join(saveFilePath, newFileName);
+            await uploadedFile.mv(newFilePath);
+            res.status(200).send('File saved successfully');
+        } catch (err) {
+            console.error('Error processing request:', err);
+            next(err);
+        }
+    }
+
+
+
 }
 module.exports = new admin();

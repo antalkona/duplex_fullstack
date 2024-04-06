@@ -5,6 +5,10 @@ const express = require('express');
 const bodyParser = require('body-parser'); // Добавлено для парсинга тела запроса
 require('dotenv').config();
 const cookieParser = require('cookie-parser');
+const fileUpload = require('express-fileupload');
+const multer = require('multer');
+
+
 
 // ---------------------------------------------------------------
 
@@ -30,16 +34,27 @@ const app = express(); // EXPRESS - для сайта
 // ПОДКЛЮЧЕНИЕ ИСПОЛЬЗОВАНИЙ К ПРИЛОЖЕНИЮ
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
-app.use(bodyParser.json()); // Используем bodyParser для парсинга JSON данных
 app.use(cookieParser());
+app.use(fileUpload());
 // app.use(postRequestApp);
 app.use(pageRequestAppPage);
-app.use(pageRequestAppPage2);
 app.use(startRequest)
 app.use(mainPage);
 app.use('/api/admin', adminRouter)
 
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
+// Настройка multer для сохранения загруженных файлов в определенную папку
+const storage = multer.diskStorage({
+    destination: function (req, file, cb) {
+        cb(null, 'uploads/');
+    },
+    filename: function (req, file, cb) {
+        cb(null, file.originalname);
+    }
+});
+const upload = multer({ storage: storage });
 // ---------------------------------------------------------------
 
 

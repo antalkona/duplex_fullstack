@@ -187,7 +187,7 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 10px;
 }
 .titleText{
     font-size: 30px;
@@ -196,6 +196,7 @@ main{
     font-weight: 600;
 }
 .loadBox{
+
     width: auto;
     height: auto;
     display: flex;
@@ -209,4 +210,62 @@ main{
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+}
+#drop-zone {
+
+    border: 2px dashed #ccc;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+    width: 300px;
+}
+
+#drop-zone.drag-over {
+    background-color: #f0f0f0;
+}
+
+#drop-zone p {
+    margin: 0;
+}
+
+#file-input {
+    display: none;
+}
+
+.manual-upload-button {
+    width: 40px;
+    height: 40px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.dropText{
+    font-size: 15px;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+#file-name-display{
+    font-size: 10px;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+}
+.btn_send{
+    cursor: pointer;
+    width: 140px;
+    height: 35px;
+    color: white;
+    border-radius: 12px;
+    border: none;
+    background: #0094FF;
+}
+.btn_send:hover{
+    background: #4a9edc;
 }
