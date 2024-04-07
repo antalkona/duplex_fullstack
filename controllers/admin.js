@@ -116,12 +116,80 @@ class admin{
             const newFileName = `${randomCode}${fileExtension}`;
             const newFilePath = path.join(saveFilePath, newFileName);
             await uploadedFile.mv(newFilePath);
+            const configFilePath = path.join(saveFilePath, '..', 'config.json');
+            const configData = fs.readFileSync(configFilePath, 'utf8');
+            const config = JSON.parse(configData);
+            let id = config.id || 0;
+            id++;
+            const updatedConfig = { id };
+            fs.writeFileSync(configFilePath, JSON.stringify(updatedConfig, null, 2));
+            const fileDate = req.body.fileDate;
+            const filesFilePath = path.join(saveFilePath, '..', 'files.json');
+            const filesData = fs.readFileSync(filesFilePath, 'utf8');
+            const files = JSON.parse(filesData);
+            const newFileEntry = {
+                id: id,
+                data: fileDate,
+                name: newFileName
+            };
+            files.push(newFileEntry);
+            fs.writeFileSync(filesFilePath, JSON.stringify(files, null, 2));
             res.status(200).send('File saved successfully');
         } catch (err) {
             console.error('Error processing request:', err);
             next(err);
         }
     }
+    async sheddat(req, res, next) {
+        const gilePatch = path.join(__dirname, '..', 'public', 'schedule', 'files.json');
+        console.log("+")
+        fs.readFile(gilePatch, 'utf8', (err, data) => {
+            if (err) {
+                console.log("error")
+                res.status(200).send('Ошибка чтения файла данных.');
+            } else {
+                const filesData = JSON.parse(data);
+                console.log(filesData);
+                res.json(filesData);
+            }
+        });
+    }
+    async sheddatDel(req, res, next) {
+        try {
+            const fileIdToDelete = req.body.del;
+            const gilePatch = path.join(__dirname, '..', 'public', 'schedule', 'files.json');
+
+            // Используем асинхронный метод fs.readFile вместо колбэка для удобства работы с промисами
+            const data = await fs.promises.readFile(gilePatch, 'utf8');
+            let filesData = JSON.parse(data);
+
+            // Исправляем опечатку: должно быть filesData, а не gilePatch
+            const fileToDelete = filesData.find(file => file.name === fileIdToDelete);
+
+            if (!fileToDelete) {
+                // Изменяем статус ответа на 404, так как файл не найден
+                return res.status(404).json({ message: 'File not found.' });
+            }
+
+            const filePathToDelete = path.join(__dirname, '..', 'public', 'schedule', 'files', fileToDelete.name);
+
+            // Используем асинхронный метод fs.unlink вместо колбэка для удобства работы с промисами
+            await fs.promises.unlink(filePathToDelete);
+
+            // Удаление объекта с информацией о файле из filesData
+            filesData = filesData.filter(file => file.name !== fileIdToDelete);
+            await fs.promises.writeFile(gilePatch, JSON.stringify(filesData, null, 2));
+
+            // Исправляем статус ответа на 200, так как операция прошла успешно
+            res.status(200).json({ message: 'File deleted successfully' });
+        } catch (error) {
+            // Возвращаем ошибку сервера с соответствующим статусом
+            console.error('Ошибка при удалении файла:', error);
+            res.status(500).json({ message: 'Internal Server Error' });
+        }
+    }
+
+
 
 
 

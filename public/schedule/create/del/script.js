@@ -40,13 +40,13 @@ fetch('/schedule/create/data')
 
         data.forEach(item => {
             const div = document.createElement('div');
-            div.className = 'r_cont';
+            div.className = 'shedLine';
             div.id = `div-${item.id}`;
             div.innerHTML = `
                     <h1 class="date">${item.data}</h1>
                     <div class="buttons">
                         <button class="download btn btn-success" type="button" onclick="downloadFile('${item.name}')">Скачать</button>
-                    <button class="delete btn btn-danger" onclick="deleteFile(${item.id})">Удалить</button>
+                    <button class="delete btn btn-danger" onclick="deleteFile("${item.id}")">Удалить</button>
                     </div>
                     
                 

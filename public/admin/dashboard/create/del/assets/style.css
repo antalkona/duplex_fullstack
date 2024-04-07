@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    background: #0d1821;
+}
+header{
+    background: #0d1821;
+
+    z-index: 100;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    z-index: 100;
+    margin-left: 2%;
+    height: 50%;
+}
+.userInfo{
+    z-index: 100;
+    margin-right: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+}
+.adminTitle{
+    font-size: 15px;
+    color: #c4c4c4;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin-left: -10%;
+}
+.userName{
+    font-size: 20px;
+    color: #c4c4c4;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.iconframe{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.iconImg{
+    width: 150%;
+}
+
+usermenu{
+    z-index: 100;
+    position: absolute;
+    width: 15%;
+    height: auto;
+    right: 1%;
+    background: #1c2235;
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    border-radius: 12px;
+    gap: 10px;
+}
+.avatarBox{
+    margin-top: 20px;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Avatar{
+    width: 150%;
+
+}
+.mName{
+    font-size: 30px;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+.mId{
+    margin-top: -10px;
+    font-size: 15px;
+    color: #40576b;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.premlist{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 10px;
+}
+.rules{
+    margin-top: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.logout{
+    margin-top: 20px;
+    cursor: pointer;
+    width: 90%;
+    background: #0094FF;
+    height: 40px;
+    font-size: 20px;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+.logout:hover{
+    background: #0080FF;
+}
+.margintm{
+    height: 2px;
+}
+.shape1{
+    z-index: 0;
+
+    position: absolute;
+    bottom: -20vh;
+    left: -20vh;
+    width: 55vh;
+    height: 55vh;
+    border-radius: 100%;
+    background: #0e33b7;
+    fill: #0e33b7;
+    filter: blur(200px);
+}
+.shape2{
+    z-index: 0;
+    position: absolute;
+    top: -20vh;
+    right: -20vh;
+    width: 45vh;
+    height: 45vh;
+    border-radius: 100%;
+    background: #0e33b7;
+    fill: #0e33b7;
+    filter: blur(200px);
+}
+background{
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+main{
+    z-index: 20;
+
+    position: fixed;
+    margin-top: -70px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.create{
+    width: 90%;
+    height: 90%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.titleText{
+    font-size: 30px;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+.editBox{
+    width: 75%;
+    height: 60%;
+    background: none;
+    border: 1px solid white;
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 12px;
+    padding-top: 10px;
+}
+.shedLine{
+
+    width: 98%;
+    height: 6vh;
+    border-radius: 9px;
+    background: rgba(255, 255, 255, 0.34);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.date{
+    margin-left: 10px;
+    font-size: 3vh;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+.btnBox{
+    margin-right: 10px;
+    height: 80%;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.downloadBtn{
+    cursor: pointer;
+    height: 100%;
+    width: 7vw;
+    border-radius: 3px;
+    background: #0094FF;
+    border: none;
+    font-size: 1.5vh;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+.downloadBtn:hover{
+    background: #4ab2ff;
+}
+.delBtn{
+    cursor: pointer;
+    height: 100%;
+    width: 7vw;
+    border-radius: 3px;
+    background: #fd3333;
+    border: none;
+    font-size: 1.5vh;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+.delBtn:hover{
+    background: #ff6565;
+}

@@ -117,3 +117,34 @@ form{
     color: white;
     border-radius: 12px;
 }
+
+.main-container{
+    overflow-x: scroll;
+    overflow-y: unset;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.r_cont{
+    position: relative;
+    width: 100%;
+    height: 50px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.date{
+    color: white;
+    margin-left: 5%;
+}
+.buttons{
+    margin-right: 5%;
+
+}

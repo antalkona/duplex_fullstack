@@ -41,20 +41,25 @@
     </usermenu>
     <main>
         <div class="create">
-            <h1 class="titleText">Изменить расписание</h1>
-            <div class="editBox" id="editBox">
-                <div class="shedLine">
-                    <h1 class="date">1 Апреля</h1>
-                    <div class="btnBox">
-                        <button class="downloadBtn">Скачать</button>
-                        <button class="delBtn">Удалить</button>
-                    </div>
-                </div>
+            <h1 class="titleText">Загрузить расписание</h1>
+<!--            <div class="loadBox">-->
+
+<!--            </div>-->
+            <div id="drop-zone">
+                <p class="dropText">Перетащите файл или выберите:</p>
+                <p>or</p>
+                <label for="file-input" class="manual-upload-button">Выбрать файлы</label>
+                <input type="file" id="file-input" multiple>
+                <div id="file-name-display"></div> <!-- Этот div будет отображать имя файла -->
+
             </div>
+            <input id="fileDate">
+            <button class="btn_send" onclick="submitForm()">Отправить</button>
         </div>
     </main>
     <script src="./assets/script.js"></script>
     <script src="./assets/function.js"></script>
+    <script src="./assets/dragAndDrop.js"></script>
     <!-- Begin of Chaport Live Chat code -->
     <script type="text/javascript">
         (function(w,d,v3){
