@@ -269,3 +269,26 @@ main{
 .delBtn:hover{
     background: #ff6565;
 }
+
+.editBtn{
+    z-index: 100001;
+    cursor: pointer;
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    border-radius: 12px;
+    width: 250px;
+    height: 50px;
+    background: #0094FF;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: Roboto;
+
+}
+.editBtn:hover{
+    background: #70c1ff;
+}

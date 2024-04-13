@@ -132,7 +132,14 @@
 
 <script>
     // Fetch data from the server
-    fetch('/schedule/data')
+    fetch('/api/admin/sendshed/dat/',
+        {
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            method: "POST"
+        })
         .then(response => response.json())
         .then(data => {
             // Sort data by id in descending order

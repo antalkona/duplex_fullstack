@@ -188,7 +188,13 @@ class admin{
             res.status(500).json({ message: 'Internal Server Error' });
         }
     }
+    async cPages(req, res, next){
+        try{
 
+        }catch (err){
+            next(err)
+        }
+    }
 
 
 

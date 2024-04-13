@@ -117,3 +117,16 @@ form{
     color: white;
     border-radius: 12px;
 }
+
+.activeHeader:hover{
+    cursor: pointer;
+    color: #70c1ff;
+}
+.editBtn{
+    height: 10px;
+    width: 10px;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: #70c1ff;
+}
